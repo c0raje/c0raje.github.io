@@ -1,0 +1,25 @@
+:root {
+  --size-ico: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header .page-name {}
+
+.header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.header label {
+  width: var(--size-ico);
+  height: var(--size-ico);
+}
+
+.header label img {
+  width: 100%;
+  height: 100%;
+}
