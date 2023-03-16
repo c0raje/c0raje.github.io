@@ -23,10 +23,18 @@
 
   /* main */
   --c-section-name: rgb(200 200 200);
-  --f-s-section-name: 20px;
+  --f-s-section-name: 18px;
 
   --c-section-text: rgb(180 180 180);
   --f-s-section-text: 14px;
+
+  --c-proyect-name: rgb(160 160 160);
+  --f-s-proyect-name: 14px;
+
+  --c-proyect-description: rgb(140 140 140);
+  --f-s-proyect-description: 10px;
+
+  --s-c-i: 50px;
 }
 
 body {
@@ -109,15 +117,15 @@ section {
 }
 
 .home .section-name {
+  font-size: 30px;
   padding: 2px 6px;
   border-radius: 8px;
   display: inline;
   background: rgba(0, 0, 0, .6);
-  -webkit-backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .section-text {
-  /* border: 1px solid var(--c-border); */
   padding: 10px;
   color: var(--c-section-text);
   font-size: var(--f-s-section-text);
@@ -127,4 +135,61 @@ section {
   border-radius: 10px;
   float: right;
   width: 120px;
+}
+
+.proyects .proyects-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.proyects .proyects-gallery .proyect {
+  border-radius: 10px;
+  padding: 8px;
+  background: rgb(10 10 34);
+  width: 100%;
+}
+
+.proyects .proyects-gallery .proyect .proyect-name {
+  color: var(--c-proyect-name);
+  font-size: var(--f-s-proyect-name);
+}
+
+.proyects .proyects-gallery .proyect .proyect-description {
+  color: var(--c-proyect-description);
+  font-size: var(--f-s-proyect-description);
+}
+
+.proyects .proyects-gallery .proyect .proyect-description a {
+  float: right;
+  bottom: 0%;
+}
+
+.proyects .proyects-gallery .proyect .proyect-description a button {
+  border: none;
+  margin-top: 12px;
+  padding: 0px 6px;
+  border-radius: 4px;
+  background: rgb(20 20 44);
+  color: rgb(120 120 120);
+}
+
+
+.contact .div-contact {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact .div-contact article {
+  width: var(--s-c-i);
+  height: var(--s-c-i);
+}
+
+.contact .div-contact article a {
+  padding: 6px;
+}
+.contact .div-contact article a img {
+  width: 100%;
+  height: 100%;
 }
