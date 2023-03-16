@@ -22,7 +22,7 @@
 
 
   /* main */
-  --c-section-name: rgb(200 200 255);
+  --c-section-name: rgb(200 200 200);
   --f-s-section-name: 20px;
 
   --c-section-text: rgb(180 180 180);
@@ -98,11 +98,26 @@ section {
 }
 
 .home {
-  background-image: url();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/design-web-b.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+}
+
+.home .section-name {
+  padding: 2px 6px;
+  border-radius: 8px;
+  display: inline;
+  background: rgba(0, 0, 0, .6);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .section-text {
-  border: 1px solid var(--c-border);
+  /* border: 1px solid var(--c-border); */
   padding: 10px;
   color: var(--c-section-text);
   font-size: var(--f-s-section-text);
