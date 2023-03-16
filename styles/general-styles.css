@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif, monospace;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -66,6 +67,7 @@ img {
 
 .page-name {
   color: var(--c-page-name);
+  font-size: var(--f-s-page-name);
 }
 
 .nav__ul {
@@ -83,6 +85,7 @@ img {
 
 .nav__text {
   color: var(--c-nav__text);
+  font-size: var(--f-s-nav__text);
 }
 
 .nav__text:hover {
@@ -93,7 +96,11 @@ img {
 
 /* main */
 
-main {}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 section {
   margin: 20px auto;
@@ -106,6 +113,7 @@ section {
 }
 
 .home {
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +122,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .home .section-name {
@@ -197,6 +207,73 @@ section {
 }
 
 @media (min-width: 720px){
+
+  :root {
+    --c-body: rgb(10, 10, 24);
+  
+    --c-border: rgb(0 255 255);
+  
+  
+  
+    /* header */
+    --c-page-name: rgb(255 255 255);
+    --f-s-page-name: 30px;
+    
+    --c-nav__text: rgb(200 200 200);
+    --f-s-nav__text: 22px;
+  
+  
+  
+    /* main */
+    --c-section-name: rgb(200 200 200);
+    --f-s-section-name: 28px;
+  
+    --c-section-text: rgb(180 180 180);
+    --f-s-section-text: 24px;
+  
+    --c-proyect-name: rgb(160 160 160);
+    --f-s-proyect-name: 24px;
+  
+    --c-proyect-description: rgb(140 140 140);
+    --f-s-proyect-description: 20px;
+  
+    --s-c-i: 100px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .page-name {
+    color: var(--c-page-name);
+  }
+
+  .nav__text {
+    color: var(--c-nav__text);
+    font-size: var(--f-s-nav__text);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .home {
+    margin-top: 80px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .proyects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
   .proyects .proyects-gallery {
     display: grid;
