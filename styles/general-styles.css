@@ -113,6 +113,7 @@ section {
 }
 
 .home {
+  width: 90%;
   margin-top: 80px;
   display: flex;
   align-items: center;
@@ -145,6 +146,12 @@ section {
   border-radius: 10px;
   float: right;
   width: 120px;
+}
+
+.proyects {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .proyects .proyects-gallery {
