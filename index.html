@@ -1,40 +1,60 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/general-styles.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <p class="page-name">C0raje</p>
-      <nav>
-        <ul>
-          <a href="#">
-            <li>
-              <p class="nav-text">Inicio</p>
-            </li>
-          </a><a href="#">
-            <li>
-              <p class="nav-text"></p>
-            </li>
-          </a><a href="#">
-            <li>
-              <p class="nav-text">Proyectos</p>
-            </li>
-          </a><a href="#">
-            <li>
-              <p class="nav-text">Contacto</p>
-            </li>
-          </a>
-        </ul>
-      </nav>
-      <input type="checkbox" name="checkbox" id="checkbox">
-      <label for="checkbox">
-        <img src="images/menu.png" alt="">
-      </label>
-    </header>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/general-styles.css">
+  <title>c0raje</title>
+</head>
+<body>
+  <header class="header">
+    <p class="page-name">C0raje</p>
+    <nav class="header__nav">
+      <ul class="nav__ul">
+        <a href="#home">
+          <li>
+            <p class="nav__text">Inicio</p>
+          </li>
+        </a><a href="#about-as">
+          <li>
+            <p class="nav__text">Acerca de</p>
+          </li>
+        </a><a href="#proyects">
+          <li>
+            <p class="nav__text">Proyectos</p>
+          </li>
+        </a><a href="#contact">
+          <li>
+            <p class="nav__text">Contacto</p>
+          </li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <section id="home" class="home">
+      <p class="section-name">Inicio</p>
+    </section>
+
+    <section id="about-as" class="about-as">
+      <p class="section-name">Acerca de <b>C0raje</b></p>
+      <p class="section-text">
+        <img src="images/design-web.png" alt="">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt iure quae soluta deserunt repellendus? Libero dolorum laborum illum nisi ex, velit dolores dolor tempora officia ducimus, pariatur quo, impedit dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, excepturi iusto? Harum, aperiam nobis expedita neque voluptate perferendis provident! Placeat vel aliquid est sapiente qui ad repellendus necessitatibus expedita dolorem.
+      </p>
+    </section>
+
+    <section id="proyects" class="proyects">
+      <p class="section-name">Proyectos</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="section-name">Contacto</p>
+    </section>
+  </main>
+</body>
 </html>
