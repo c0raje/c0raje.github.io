@@ -40,7 +40,7 @@
 
 body {
   background: var(--c-body);
-  padding-bottom: 10vh;
+  padding-bottom: 120px;
 }
 
 hr {
@@ -211,6 +211,31 @@ section {
 .contact .div-contact article a img {
   width: 100%;
   height: 100%;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  background: rgba(0, 0, 30, 0.8);
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.8rem;
+  position: fixed;
+  bottom: 0%;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #f1c40f;
+}
+
+.footer p:first-child {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 720px){
