@@ -58,11 +58,14 @@ body {
 
 .main .question {
   margin-left: 20px;
+  margin-right: 10px;
   font-size: var(--f-s3);
   color: var(--c-text3);
 }
 .main .request {
+  margin-top: 10px;
   margin-left: 40px;
+  margin-right: 10px;
   font-size: var(--f-s2);
   color: var(--c-text4);
 }
