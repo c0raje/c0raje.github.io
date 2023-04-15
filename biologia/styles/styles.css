@@ -75,6 +75,13 @@ body {
   font-size: var(--f-s4);
   color: var(--c-text4);
 }
+.main .section .contain-img {
+  margin-left: 40px;
+  width: 90%;
+}
+.main .section .contain-img img {
+  width: 100%;
+}
 .main hr {
   height: 1px;
   border: none;
