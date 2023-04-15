@@ -14,14 +14,14 @@
   --f-s3: 1.2rem;
   --f-s2: 0.8rem;
   --f-s: 0.4rem;
-  --c-f-b: rgb(30 30 30);
+  --c-f-b: rgb(20 20 20);
   --c-border: rgb(0 255 255);
   --c-hr: rgb(0 255 255);
   --c-text: rgb(255 255 255);
   --c-text2: rgb(200 200 200);
   --c-text3: rgb(180 180 180);
   --c-text4: rgb(170 170 170);
-  --c-f-footer: rgb(36 36 36);
+  --c-f-footer: rgb(30 30 30);
 }
 
 body {
