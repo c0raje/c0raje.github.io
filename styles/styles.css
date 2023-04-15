@@ -45,7 +45,7 @@ body {
 
 .main {
   width: auto;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +74,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
 
 .footer .column {
@@ -85,12 +85,12 @@ body {
 
 .footer .column .column-name {
   color: var(--c-text3);
-  font-size: var(--f-s2);
+  font-size: var(--f-s1);
 }
 
 .footer .column .column-text {
   color: var(--c-text4);
-  font-size: var(--f-s1);
+  font-size: var(--f-s);
 }
 
 
