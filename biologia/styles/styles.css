@@ -42,13 +42,13 @@ body {
 .header a button {
   background: transparent;
   padding: 12px;
-  font-size: var(--f-s4);
+  font-size: var(--f-s5);
   color: var(--c-text2);
   border: 1px solid var(--c-border);
   border-radius: 16px;
 }
 .header .page-name {
-  font-size: var(--f-s5);
+  font-size: var(--f-s6);
   color: var(--c-text);
 }
 
@@ -65,14 +65,14 @@ body {
 .main .section .question {
   margin-left: 20px;
   margin-right: 10px;
-  font-size: var(--f-s4);
+  font-size: var(--f-s5);
   color: var(--c-text3);
 }
 .main .section .request {
   margin-top: 10px;
   margin-left: 40px;
   margin-right: 10px;
-  font-size: var(--f-s3);
+  font-size: var(--f-s4);
   color: var(--c-text4);
 }
 .main hr {
@@ -100,10 +100,10 @@ body {
 
 .footer .column .column-name {
   color: var(--c-text3);
-  font-size: var(--f-s2);
+  font-size: var(--f-s3);
 }
 
 .footer .column .column-text {
   color: var(--c-text4);
-  font-size: var(--f-s1);
+  font-size: var(--f-s2);
 }
