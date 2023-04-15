@@ -56,13 +56,13 @@ body {
   margin: 30px 0px;
 }
 
-.main .question {
+.main .section .question {
   margin-left: 20px;
   margin-right: 10px;
   font-size: var(--f-s3);
   color: var(--c-text3);
 }
-.main .request {
+.main .section .request {
   margin-top: 10px;
   margin-left: 40px;
   margin-right: 10px;
@@ -71,6 +71,7 @@ body {
 }
 .main hr {
   height: 1px;
+  border: none;
   background: var(--c-hr);
   margin-top: 6px;
   margin-bottom: 30px;
