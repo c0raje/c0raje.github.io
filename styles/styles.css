@@ -79,7 +79,7 @@ body {
 
 .footer .column {
   display: grid;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 1fr 2fr;
   padding: 10px;
 }
 
