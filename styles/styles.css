@@ -38,7 +38,7 @@ body {
 }
 
 .header .page-name {
-  font-size: var(--f-s7);
+  font-size: var(--f-s5);
   color: var(--c-text);
   font-weight: bold;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 .main a button .btn-name {
-  font-size: var(--f-s8);
+  font-size: var(--f-s7);
   color: var(--c-text2);
   font-weight: bold;
 }
@@ -85,12 +85,12 @@ body {
 
 .footer .column .column-name {
   color: var(--c-text3);
-  font-size: var(--f-s3);
+  font-size: var(--f-s2);
 }
 
 .footer .column .column-text {
   color: var(--c-text4);
-  font-size: var(--f-s2);
+  font-size: var(--f-s1);
 }
 
 
