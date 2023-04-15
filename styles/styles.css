@@ -33,12 +33,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 0px;
+  padding: 10px 0px;
   border-bottom: 1px solid var(--c-border);
 }
 
 .header .page-name {
-  font-size: var(--f-s5);
+  font-size: var(--f-s4);
   color: var(--c-text);
   font-weight: bold;
 }
