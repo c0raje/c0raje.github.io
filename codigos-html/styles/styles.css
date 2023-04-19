@@ -32,7 +32,7 @@ body {
   text-align: center;
   margin: 20px;
   color: var(--c-text1);
-  font-size: var(--f-s5);
+  font-size: var(--f-s4);
 }
 
 .table {
@@ -41,11 +41,11 @@ body {
 }
 
 .table .title-code {
-  font-size: var(--f-s4);
+  font-size: var(--f-s3);
   color: var(--c-text2);
 }
 
 .table .code {
   color: var(--c-text3);
-  font-size: var(--f-s3);
+  font-size: var(--f-s2);
 }
