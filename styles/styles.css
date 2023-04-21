@@ -6,13 +6,13 @@
 }
 
 :root {
-  --f-s8: 3.2rem;
-  --f-s7: 2.8rem;
-  --f-s6: 2.4rem;
-  --f-s5: 2rem;
-  --f-s4: 1.6rem;
-  --f-s3: 1.2rem;
-  --f-s2: 0.8rem;
+  --f-s8: 2rem;
+  --f-s7: 1.8rem;
+  --f-s6: 1.6rem;
+  --f-s5: 1.4rem;
+  --f-s4: 1.2rem;
+  --f-s3: 0.8rem;
+  --f-s2: 0.6rem;
   --f-s: 0.4rem;
   --c-f-header: rgb(0 0 16);
   --c-border: rgb(0 255 255);
@@ -22,10 +22,11 @@
   --c-text4: rgb(170 170 170);
   --c-f-btn: rgb(10 10 10);
   --c-f-footer: rgb(0 0 10);
+  --c-f-body: rgb(10 10 30);
 }
 
 body {
-  animation: fondo 40s infinite steps(120);
+  background: var(--c-f-body);
 }
 
 .header {
@@ -44,12 +45,12 @@ body {
 }
 
 .main {
-  width: auto;
-  height: 90vh;
   display: flex;
+  gap: 120px;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  padding: 60px 0px;
 }
 
 .main a {
@@ -74,7 +75,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .footer .column {
@@ -91,38 +92,4 @@ body {
 .footer .column .column-text {
   color: var(--c-text4);
   font-size: var(--f-s);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes fondo {
-  0% {
-    background: rgb(0 0 20);
-  }
-  25% {
-    background: rgb(6 6 30);
-  }
-  50% {
-    background: rgb(10 10 40);
-  }
-  75% {
-    background: rgb(6 6 30);
-  }
-  100% {
-    background: rgb(0 0 20);
-  }
 }
