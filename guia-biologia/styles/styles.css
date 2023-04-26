@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+:root {
+  --f-s8: 1.8rem;
+  --f-s7: 1.6rem;
+  --f-s6: 1.4rem;
+  --f-s5: 1.2rem;
+  --f-s4: 1rem;
+  --f-s3: 0.8rem;
+  --f-s2: 0.6rem;
+  --f-s: 0.4rem;
+  --c-f-b: rgb(20 20 20);
+  --c-border: rgb(0 255 255);
+  --c-hr: rgb(0 255 255);
+  --c-text: rgb(255 255 255);
+  --c-text2: rgb(200 200 200);
+  --c-text3: rgb(180 180 180);
+  --c-text4: rgb(170 170 170);
+  --c-f-footer: rgb(30 30 30);
+}
+
+body {
+  background: var(--c-f-b);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--c-border);
+}
+.header a {
+  text-decoration: none;
+}
+.header a button {
+  background: transparent;
+  padding: 12px;
+  font-size: var(--f-s5);
+  color: var(--c-text2);
+  border: 1px solid var(--c-border);
+  border-radius: 16px;
+}
+.header .page-name {
+  font-size: var(--f-s6);
+  color: var(--c-text);
+}
+
+.main {
+  margin: 30px 0px;
+}
+
+.main .section {
+  padding-top: 20px;
+  margin-top: 50px;
+  border-top: 1px solid rgb(255 0 0);
+}
+
+.main .section .question {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: var(--f-s5);
+  color: var(--c-text3);
+}
+.main .section .request {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 10px;
+  font-size: var(--f-s4);
+  color: var(--c-text4);
+}
+.main .section .contain-img {
+  margin-left: 40px;
+  width: 90%;
+}
+.main .section .contain-img img {
+  width: 100%;
+}
+.main hr {
+  height: 1px;
+  border: none;
+  background: var(--c-hr);
+  margin-top: 6px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background: var(--c-f-footer);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+}
+
+.footer .column {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  padding: 10px;
+}
+
+.footer .column .column-name {
+  color: var(--c-text3);
+  font-size: var(--f-s3);
+}
+
+.footer .column .column-text {
+  color: var(--c-text4);
+  font-size: var(--f-s2);
+}
