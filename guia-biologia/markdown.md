@@ -99,3 +99,65 @@ Por lo tanto, la lista de posibles descendientes para cada cruce es:
 
 1. Paloma blanca x Paloma negra: Todos los descendientes serán de plumaje pinto (Bb).
 2. Paloma pinta x Paloma negra: La mitad de los descendientes serán de plumaje pinto (Bb) y la otra mitad será de plumaje negro (bb).
+
+
+
+
+
+
+
+
+
+
+
+
+### 16. Representa la cruza y escribe los resultados entre un hombre hemofilico con una mujer normal. Y la cruza entre una mujer portadora y un hombre normal.
+La hemofilia es una enfermedad ligada al cromosoma X, por lo que se presenta principalmente en hombres. Un hombre hemofílico tiene el genotipo XhY y una mujer normal tiene el genotipo XHXH. Si cruzamos a estos dos individuos, el resultado sería:
+
+```
+  |  Xh |  Y
+--|-----|-----
+XH| XhXH| XHY
+```
+
+Todos los hijos varones tendrán el genotipo XhY y, por lo tanto, serán hemofílicos. Las hijas mujeres tendrán el genotipo XHXh y serán portadoras de la hemofilia.
+
+En la segunda cruza, una mujer portadora tiene el genotipo XHXh y un hombre normal tiene el genotipo XY. Los resultados posibles son:
+
+```
+  |  Xh |  XH
+--|-----|-----
+Xh| XhXh| XhXH
+--|-----|-----
+X | XHXh| XHY
+```
+
+La mitad de los hijos varones tendrán el genotipo XHY y, por lo tanto, serán normales. La otra mitad tendrá el genotipo XhY y serán hemofílicos. La mitad de las hijas mujeres tendrán el genotipo XHXh y serán portadoras de la hemofilia, mientras que la otra mitad tendrá el genotipo XHXH y será normal.
+
+### 1. Se utilizan para cortar segmentos de ADN.
+Las enzimas de restricción (también conocidas como endonucleasas de restricción) se utilizan para cortar segmentos de ADN de manera específica en lugares determinados por su secuencia de nucleótidos.
+
+### 2. Se ha utilizado para identificar personas a partir de una muestra de células.
+El análisis de ADN se ha utilizado para identificar personas a partir de una muestra de células.
+
+### 3. Consiste en corregir genes en personas con enfermedades hereditarias.
+La edición genética consiste en la corrección de genes en personas con enfermedades hereditarias.
+
+### 4. Reacción en cadena de la polimerasa, que se utiliza en ingeniería genética.
+La reacción en cadena de la polimerasa (PCR, por sus siglas en inglés) es una técnica utilizada en ingeniería genética para amplificar una cantidad muy pequeña de ADN en grandes cantidades. La PCR utiliza una enzima llamada Taq polimerasa para hacer copias de una región específica de ADN. Esta técnica se utiliza ampliamente en la investigación genética y forense, la medicina y la biotecnología. La PCR permite la clonación de genes, la secuenciación de ADN, la identificación de enfermedades hereditarias y la detección de patógenos.
+
+### 5. Establece los limites para las aplicaciones de la biotecnología.
+Los límites para las aplicaciones de la biotecnología deben establecerse dentro de ciertos límites éticos, sociales y legales para garantizar su uso responsable y seguro. Se deben considerar la ética, la privacidad, la protección ambiental, la transparencia y la responsabilidad, y las implicaciones sociales y económicas antes de implementar nuevas aplicaciones de la biotecnología.
+
+### 6. Identificación de la secuencia del ADN humano.
+Determinar el orden de los nucleótidos en el genoma humano mediante secuenciación de ADN. Se aplica en medicina, biotecnología e investigación genética, para identificar genes de enfermedades hereditarias, tratamientos personalizados, casos forenses y de paternidad, y entender mejor la biología humana.
+
+### 7. Organismo al que se ha insertado un gen de otra especie.
+Un organismo que ha sido modificado genéticamente mediante la inserción de un gen de otra especie se llama organismo transgénico o GMO. Se utiliza en la agricultura, producción de alimentos, investigación médica y científica, y producción de biocombustibles y productos industriales.
+
+### 8. Uno de los primeros productos obtenidos por la ingeniería genética.
+La insulina recombinante fue uno de los primeros productos obtenidos por la ingeniería genética en los años 70. Se produjo utilizando técnicas de ingeniería genética y permitió su producción a gran escala y sin la necesidad de extraerla de animales. Este avance fue importante para el tratamiento de la diabetes y allanó el camino para el desarrollo de otros medicamentos producidos mediante ingeniería genética.
+
+
+
+
