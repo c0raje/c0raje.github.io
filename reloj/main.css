@@ -21,7 +21,7 @@ body {
   border: solid red;
   padding: 10px 10px;
   border-radius: 5px;
-  -webkit-box-reflect: below 4px linear-gradient(transparent, transparent, #000);
+  \\-webkit-box-reflect: below 4px linear-gradient(transparent, transparent, #000);
 
 }
 
