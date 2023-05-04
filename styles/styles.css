@@ -1,3 +1,4 @@
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
@@ -5,91 +6,78 @@
   font-family: monospace;
 }
 
+/* Variables globales */
 :root {
-  --f-s8: 2rem;
-  --f-s7: 1.8rem;
-  --f-s6: 1.6rem;
-  --f-s5: 1.4rem;
-  --f-s4: 1.2rem;
-  --f-s3: 0.8rem;
-  --f-s2: 0.6rem;
-  --f-s: 0.4rem;
-  --c-f-header: rgb(0 0 16);
-  --c-border: rgb(0 255 255);
-  --c-text: rgb(255 255 255);
-  --c-text2: rgb(200 200 200);
-  --c-text3: rgb(180 180 180);
-  --c-text4: rgb(170 170 170);
-  --c-f-btn: rgb(10 10 10);
-  --c-f-footer: rgb(0 0 10);
-  --c-f-body: rgb(10 10 30);
+  --font-size-xl: 2rem;
+  --font-size-lg: 1.8rem;
+  --font-size-md: 1.6rem;
+  --font-size-sm: 1.4rem;
+  --font-size-xs: 1.2rem;
+  --font-size-xxs: 0.8rem;
+  --font-size-xxx: 0.6rem;
+
+  --color-header-bg: rgb(0 0 16);
+  --color-border: rgb(0 255 255);
+  --color-text: rgb(255 255 255);
+  --color-text-secondary: rgb(200 200 200);
+  --color-text-tertiary: rgb(180 180 180);
+  --color-text-quaternary: rgb(170 170 170);
+  --color-button-bg: rgb(10 10 10);
+  --color-footer-bg: rgb(0 0 10);
+  --color-body-bg: rgb(10 10 30);
 }
 
+/* Estilos de página */
 body {
-  background: var(--c-f-body);
+  background: var(--color-body-bg);
 }
 
+/* Estilos de encabezado */
 .header {
-  background: var(--c-f-header);
+  background: var(--color-header-bg);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0px;
-  border-bottom: 1px solid var(--c-border);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .header .page-name {
-  font-size: var(--f-s4);
-  color: var(--c-text);
+  font-size: var(--font-size-xs);
+  color: var(--color-text);
   font-weight: bold;
 }
 
-.main {
-  display: flex;
-  gap: 120px;
-  flex-direction: column;
+/* Estilos de contenido principal */
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 60px 0px;
+  padding: 4rem 0;
 }
 
-.main a {
+.main-content a {
   text-decoration: none;
 }
 
-.main a button {
-  background: var(--c-f-btn);
-  padding: 20px;
-  border: 1px solid var(--c-border);
+.main-content a button {
+  background: var(--color-button-bg);
+  padding: 2rem;
+  border: 1px solid var(--color-border);
 }
 
-.main a button .btn-name {
-  font-size: var(--f-s7);
-  color: var(--c-text2);
+.main-content a button .btn-name {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
   font-weight: bold;
 }
 
+/* Estilos de pie de página */
 .footer {
-  background: var(--c-f-footer);
+  background: var(--color-footer-bg);
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 10px 0px;
-}
-
-.footer .column {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  padding: 10px;
-}
-
-.footer .column .column-name {
-  color: var(--c-text3);
-  font-size: var(--f-s1);
-}
-
-.footer .column .column-text {
-  color: var(--c-text4);
-  font-size: var(--f-s);
+  align
 }
