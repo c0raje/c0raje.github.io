@@ -79,5 +79,6 @@ body {
   background: var(--color-footer-bg);
   display: flex;
   flex-direction: row;
-  align
+  align-items: center;
+  color: var(--color-text-quaternary);
 }
