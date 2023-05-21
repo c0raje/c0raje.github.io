@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: monospace, sans-serif;
+}
+
+:root {
+  --f-s-1: 1rem;
+  --f-s-2: 1.2rem;
+  --f-s-3: 1.4rem;
+  --f-s-4: 1.6rem;
+  --f-s-5: 1.8rem;
+  --f-s-6: 2rem;
+
+  --c-t-1: #fff;
+  --c-t-1: #eee;
+  --c-t-1: #ddd;
+  --c-t-1: #ccc;
+  --c-t-1: #bbb;
+  --c-t-1: #aaa;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-navigation li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.header-navigation a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.header-navigation a:hover {
+  opacity: 1;
+}
+
+
+section, .section-name, article, .article-text {
+  padding: 14px;
+  box-shadow: 0px 0px 16px #aaa;
+  border-radius: 6px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 80%;
+  margin: 10vh auto;
+}
+
+section .section-name {
+  font-size: var(--f-s-4);
+  font-weight: bold;
+}
+
+section article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  gap: 8px;
+}
+
+section article .article-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--f-s-1);
+  font-weight: 500;
+}
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-description {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-link:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.6;
+}
