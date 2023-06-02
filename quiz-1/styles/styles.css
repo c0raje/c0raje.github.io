@@ -4,10 +4,22 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #202040;
+  color: #eee;
+}
 
 .correct {
   color: green;
 }
 .incorrect {
   color: red;
+}
+
+h1 {
 }
