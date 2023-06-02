@@ -1,0 +1,172 @@
+{
+  "verbos": {
+    "be": {
+      "presente simple": {
+        "i": "Am",
+        "you": "Are",
+        "we": "Are",
+        "they": "Are",
+        "he": "Is",
+        "she": "Is",
+        "it": "Is"
+      },
+      "pasado simple": {
+        "i": "Was",
+        "you": "Were",
+        "we": "Were",
+        "they": "Were",
+        "he": "Was",
+        "she": "Was",
+        "it": "Was"
+      },
+      "futuro": {
+        "i": "Will be",
+        "you": "Will be",
+        "we": "Will be",
+        "they": "Will be",
+        "he": "Will be",
+        "she": "Will be",
+        "it": "Will be"
+      },
+      "presente participio": {
+        "i": "Being",
+        "you": "Being",
+        "we": "Being",
+        "they": "Being",
+        "he": "Being",
+        "she": "Being",
+        "it": "Being"
+      },
+      "pasado participio": {
+        "i": "Been",
+        "you": "Been",
+        "we": "Been",
+        "they": "Been",
+        "he": "Been",
+        "she": "Been",
+        "it": "Been"
+      },
+      "tiempo progresivo": {
+        "i": "Am",
+        "you": "Are",
+        "we": "Are",
+        "they": "Are",
+        "he": "Is",
+        "she": "Is",
+        "it": "Is"
+      }
+    },
+    "see": {
+      "presente simple": {
+        "i": "See",
+        "you": "See",
+        "we": "See",
+        "they": "See",
+        "he": "Sees",
+        "she": "Sees",
+        "it": "Sees"
+      },
+      "pasado simple": {
+        "i": "Saw",
+        "you": "Saw",
+        "we": "Saw",
+        "they": "Saw",
+        "he": "Saw",
+        "she": "Saw",
+        "it": "Saw"
+      },
+      "futuro": {
+        "i": "Will see",
+        "you": "Will see",
+        "we": "Will see",
+        "they": "Will see",
+        "he": "Will see",
+        "she": "Will see",
+        "it": "Will see"
+      },
+      "presente participio": {
+        "i": "Seeing",
+        "you": "Seeing",
+        "we": "Seeing",
+        "they": "Seeing",
+        "he": "Seeing",
+        "she": "Seeing",
+        "it": "Seeing"
+      },
+      "pasado participio": {
+        "i": "Seen",
+        "you": "Seen",
+        "we": "Seen",
+        "they": "Seen",
+        "he": "Seen",
+        "she": "Seen",
+        "it": "Seen"
+      },
+      "tiempo progresivo": {
+        "i": "Am seeing",
+        "you": "Are seeing",
+        "we": "Are seeing",
+        "they": "Are seeing",
+        "he": "Is seeing",
+        "she": "Is seeing",
+        "it": "Is seeing"
+      }
+    },
+    "hit": {
+      "presente simple": {
+        "i": "Hit",
+        "you": "Hit",
+        "we": "Hit",
+        "they": "Hit",
+        "he": "Hits",
+        "she": "Hits",
+        "it": "Hits"
+      },
+      "pasado simple": {
+        "i": "Hit",
+        "you": "Hit",
+        "we": "Hit",
+        "they": "Hit",
+        "he": "Hit",
+        "she": "Hit",
+        "it": "Hit"
+      },
+      "futuro": {
+        "i": "Will hit",
+        "you": "Will hit",
+        "we": "Will hit",
+        "they": "Will hit",
+        "he": "Will hit",
+        "she": "Will hit",
+        "it": "Will hit"
+      },
+      "presente participio": {
+        "i": "Hitting",
+        "you": "Hitting",
+        "we": "Hitting",
+        "they": "Hitting",
+        "he": "Hitting",
+        "she": "Hitting",
+        "it": "Hitting"
+      },
+      "pasado participio": {
+        "i": "Hit",
+        "you": "Hit",
+        "we": "Hit",
+        "they": "Hit",
+        "he": "Hit",
+        "she": "Hit",
+        "it": "Hit"
+      },
+      "tiempo progresivo": {
+        "i": "Am hitting",
+        "you": "Are hitting",
+        "we": "Are hitting",
+        "they": "Are hitting",
+        "he": "Is hitting",
+        "she": "Is hitting",
+        "it": "Is hitting"
+      }
+    }
+  }
+}
