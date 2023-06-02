@@ -40,7 +40,7 @@ fetch('jsons/json.json')
           }
         }
         showQuestion();
-      }, 2000); // Esperar 2 segundos antes de avanzar
+      }, 1500); // Esperar 2 segundos antes de avanzar
     });
 
     // Función para mostrar la pregunta actual
