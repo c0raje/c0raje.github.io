@@ -31,12 +31,13 @@ h1 {
 }
 
 .question {
+  margin: 0px 40px;
   font-size: 1rem;
 }
 
 input {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 button {
-  font-size: 2rem;
+  font-size: 1rem;
 }
