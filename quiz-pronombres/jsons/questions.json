@@ -1,0 +1,36 @@
+{
+  "questions": [
+    {
+      "question": "¿Cuál es el pronombre posesivo de primera persona en singular?",
+      "answer": "My"
+    },
+    {
+      "question": "¿Cuál es el pronombre posesivo de segunda persona en singular?",
+      "answer": "Your"
+    },
+    {
+      "question": "¿Cuál es el pronombre posesivo de tercera persona en singular (masculino)?",
+      "answer": "His"
+    },
+    {
+      "question": "¿Cuál es el pronombre posesivo de tercera persona en singular (femenino)?",
+      "answer": "Her"
+    },
+    {
+      "question": "¿Cuál es el pronombre posesivo de tercera persona en singular (neutro)?",
+      "answer": "Its"
+    },
+    {
+      "question": "¿Cuál es el pronombre posesivo de primera persona en plural?",
+      "answer": "Our"
+    },
+    {
+      "question": "¿Cuál es el pronombre posesivo de segunda persona en plural?",
+      "answer": "Your"
+    },
+    {
+      "question": "¿Cuál es el pronombre posesivo de tercera persona en plural?",
+      "answer": "Their"
+    }
+  ]
+}
