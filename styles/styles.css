@@ -1,84 +1,74 @@
-/* Reset de estilos */
-* {
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: monospace;
 }
 
-/* Variables globales */
-:root {
-  --font-size-xl: 2rem;
-  --font-size-lg: 1.8rem;
-  --font-size-md: 1.6rem;
-  --font-size-sm: 1.4rem;
-  --font-size-xs: 1.2rem;
-  --font-size-xxs: 0.8rem;
-  --font-size-xxx: 0.6rem;
-
-  --color-header-bg: rgb(0 0 16);
-  --color-border: rgb(0 255 255);
-  --color-text: rgb(255 255 255);
-  --color-text-secondary: rgb(200 200 200);
-  --color-text-tertiary: rgb(180 180 180);
-  --color-text-quaternary: rgb(170 170 170);
-  --color-button-bg: rgb(10 10 10);
-  --color-footer-bg: rgb(0 0 10);
-  --color-body-bg: rgb(10 10 30);
-}
-
-/* Estilos de página */
-body {
-  background: var(--color-body-bg);
-}
-
-/* Estilos de encabezado */
+/* Encabezado */
 .header {
-  background: var(--color-header-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--color-border);
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-.header .page-name {
-  font-size: var(--font-size-xs);
-  color: var(--color-text);
+.page-name {
+  font-size: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
-/* Estilos de contenido principal */
-.main-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+/* Contenido principal */
+.main {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  padding: 4rem 0;
+  margin-top: 20px;
 }
 
-.main-content a {
+a {
   text-decoration: none;
 }
 
-.main-content a button {
-  background: var(--color-button-bg);
-  padding: 2rem;
-  border: 1px solid var(--color-border);
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
 }
 
-.main-content a button .btn-name {
-  font-size: var(--font-size-lg);
-  color: var(--color-text-secondary);
-  font-weight: bold;
+button:hover {
+  background-color: #0056b3;
 }
 
-/* Estilos de pie de página */
+.btn-name {
+  margin: 0;
+}
+
+/* Pie de página */
 .footer {
-  background: var(--color-footer-bg);
+  background-color: #f2f2f2;
+  padding: 20px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: var(--color-text-quaternary);
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: 30%;
+}
+
+.column-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.column-text {
+  font-size: 14px;
+  margin: 0;
 }
