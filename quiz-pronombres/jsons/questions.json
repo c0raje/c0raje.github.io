@@ -31,6 +31,130 @@
     {
       "question": "¿Cuál es el pronombre posesivo de tercera persona en plural?",
       "answer": "Their"
+    },
+    {
+      "question": "¿Cuál es el pronombre personal de primera persona en singular?",
+      "answer": "I"
+    },
+    {
+      "question": "¿Cuál es el pronombre personal de segunda persona en singular?",
+      "answer": "You"
+    },
+    {
+      "question": "¿Cuál es el pronombre personal de tercera persona en singular (masculino)?",
+      "answer": "He"
+    },
+    {
+      "question": "¿Cuál es el pronombre personal de tercera persona en singular (femenino)?",
+      "answer": "She"
+    },
+    {
+      "question": "¿Cuál es el pronombre personal de tercera persona en singular (neutro)?",
+      "answer": "It"
+    },
+    {
+      "question": "¿Cuál es el pronombre personal de primera persona en plural?",
+      "answer": "We"
+    },
+    {
+      "question": "¿Cuál es el pronombre personal de segunda persona en plural?",
+      "answer": "You"
+    },
+    {
+      "question": "¿Cuál es el pronombre personal de tercera persona en plural?",
+      "answer": "They"
+    },
+    {
+      "question": "¿Cuál es el pronombre reflexivo de primera persona en singular?",
+      "answer": "Myself"
+    },
+    {
+      "question": "¿Cuál es el pronombre reflexivo de segunda persona en singular?",
+      "answer": "Yourself"
+    },
+    {
+      "question": "¿Cuál es el pronombre reflexivo de tercera persona en singular (masculino)?",
+      "answer": "Himself"
+    },
+    {
+      "question": "¿Cuál es el pronombre reflexivo de tercera persona en singular (femenino)?",
+      "answer": "Herself"
+    },
+    {
+      "question": "¿Cuál es el pronombre reflexivo de tercera persona en singular (neutro)?",
+      "answer": "Itself"
+    },
+    {
+      "question": "¿Cuál es el pronombre reflexivo de primera persona en plural?",
+      "answer": "Ourselves"
+    },
+    {
+      "question": "¿Cuál es el pronombre reflexivo de segunda persona en plural?",
+      "answer": "Yourselves"
+    },
+    {
+      "question": "¿Cuál es el pronombre reflexivo de tercera persona en plural?",
+      "answer": "Themselves"
+    },
+    {
+      "question": "¿Cuál es el pronombre interrogativo de primera persona en singular?",
+      "answer": "Who"
+    },
+    {
+      "question": "¿Cuál es el pronombre interrogativo de segunda persona en singular?",
+      "answer": "Whom"
+    },
+    {
+      "question": "¿Cuál es el pronombre interrogativo de tercera persona en singular?",
+      "answer": "Who"
+    },
+    {
+      "question": "¿Cuál es el pronombre interrogativo de primera persona en plural?",
+      "answer": "Who"
+    },
+    {
+      "question": "¿Cuál es el pronombre interrogativo de segunda persona en plural?",
+      "answer": "Whom"
+    },
+    {
+      "question": "¿Cuál es el pronombre interrogativo de tercera persona en plural?",
+      "answer": "Who"
+    },
+    {
+      "question": "¿Cuál es el pronombre demostrativo de primera persona?",
+      "answer": "This"
+    },
+    {
+      "question": "¿Cuál es el pronombre demostrativo de segunda persona?",
+      "answer": "That"
+    },
+    {
+      "question": "¿Cuál es el pronombre demostrativo de tercera persona (cerca)?",
+      "answer": "This"
+    },
+    {
+      "question": "¿Cuál es el pronombre demostrativo de tercera persona (lejos)?",
+      "answer": "That"
+    },
+    {
+      "question": "¿Cuál es el pronombre indefinido de primera persona?",
+      "answer": "One"
+    },
+    {
+      "question": "¿Cuál es el pronombre indefinido de segunda persona?",
+      "answer": "One"
+    },
+    {
+      "question": "¿Cuál es el pronombre indefinido de tercera persona (masculino)?",
+      "answer": "One"
+    },
+    {
+      "question": "¿Cuál es el pronombre indefinido de tercera persona (femenino)?",
+      "answer": "One"
+    },
+    {
+      "question": "¿Cuál es el pronombre indefinido de tercera persona (neutro)?",
+      "answer": "One"
     }
   ]
 }
