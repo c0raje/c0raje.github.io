@@ -30,7 +30,7 @@
       --font-size-days: 1rem;
 
       --color-simbology-text: rgb(255 255 255);
-      --font-size-simbology-text: 1.4rem;
+      --font-size-simbology-text: .8rem;
       --background-i-d-s: linear-gradient(
         to left, rgba(0, 0, 255, 0.5), rgba(0, 0, 100, 0.4)
       );
@@ -40,7 +40,23 @@
       --background-c-p: linear-gradient(
         rgba(0, 0, 0, 0.4)50%, rgba(200, 200, 200, 0.5)50%
       );
-
+      --color-v: rgb(255 0 0);
+      --background-t-c: rgba(255, 255, 0, 0.5);
+      --background-e-p: rgba(100, 100, 0, 0.5);
+      --background-a-r: rgba(0, 160, 160, 0.5);
+      --background-a-e: rgba(0, 0, 160, 0.5);
+      --background-a-s: rgba(0, 160, 0, 0.5);
+      --background-p-a: rgba(0, 0, 0, 0.6);
+      --background-s-l: rgba(255, 0, 0, 0.5);
+      --color-s-l: rgb(255, 255, 255);
+      --background-s-p-a: rgba(220, 120, 0, 0.5);
+      --background-c-r-c-e: rgba(80, 80, 120, 0.5);
+      --background-p-i-c-d: rgba(160, 0, 160, 0.5);
+      --background-c-c: rgba(160, 200, 0, 0.5);
+      --background-s-a-s: rgba(255, 255, 255, 0.4);
+      --color-s-a-s: rgb(255 0 0);
+      --background-r-e: rgba(160, 160, 160, 0.4);
+      --color-r-e: rgb(255 255 0);
 
       --background-footer: rgb(0 0 30);
 			--color-footer-text: rgb(255 255 255);
@@ -130,6 +146,7 @@
     .main .content-simbology {
       display: flex;
       flex-wrap: wrap;
+      gap: 10px;
       padding: 10px;
       margin: 10px 20px 30px 30px;
       border: 1px solid var(--border-color);
@@ -153,6 +170,51 @@
     }
     .f-d-s {
       background: var(--background-f-d-s);
+    }
+    .v {
+      color: var(--color-v);
+    }
+    .t-c {
+      background: var(--background-t-c);
+    }
+    .e-p {
+      background: var(--background-e-p);
+    }
+    .a-r {
+      background: var(--background-a-r);
+    }
+    .a-e {
+      background: var(--background-a-e);
+    }
+    .a-s {
+      background: var(--background-a-s);
+    }
+    .p-a {
+      background: var(--background-p-a);
+    }
+    .s-l {
+      background: var(--background-s-l);
+      color: var(--color-s-l);
+    }
+    .s-p-a {
+      background: var(--background-s-p-a);
+    }
+    .c-r-c-e {
+      background: var(--background-c-r-c-e)
+    }
+    .p-i-c-d {
+      background: var(--background-p-i-c-d);
+    }
+    .c-c {
+      background: var(--background-c-c);
+    }
+    .s-a-s {
+      background: var(--background-s-a-s);
+      color: var(--color-s-a-s);
+    }
+    .r-e {
+      background: var(--background-r-e);
+      color: var(--color-r-e);
     }
 
     .footer {
@@ -238,6 +300,20 @@
       <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
       <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
       <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+      <p class="simbology-text"><span class="v">&#35;</span>&#32;Vacaciones</p>
+      <p class="simbology-text"><span class="t-c">&#35;</span>&#32;Trabajo colegiado</p>
+      <p class="simbology-text"><span class="e-p">&#35;</span>&#32;Exámenes parciales</p>
+      <p class="simbology-text"><span class="a-r">&#35;</span>&#32;Asesorías de recuperación</p>
+      <p class="simbology-text"><span class="a-e">&#35;</span>&#32;Asesorías extraordinarias</p>
+      <p class="simbology-text"><span class="a-s">&#35;</span>&#32;Asesorías de suficiencia</p>
+      <p class="simbology-text"><span class="p-a">&#35;</span>&#32;Planeación Académica</p>
+      <p class="simbology-text"><span class="s-l">&#35;</span>&#32;Suspensión de labores</p>
+      <p class="simbology-text"><span class="s-p-a">&#35;</span>&#32;Suspensión (periodo de asueto)</p>
+      <p class="simbology-text"><span class="c-r-c-e">&#35;</span>&#32;Curso remedial para curso especial</p>
+      <p class="simbology-text"><span class="p-i-c-d">&#35;</span>&#32;Periodo intersemestral para capacitacion del personal docente y administrativo</p>
+      <p class="simbology-text"><span class="c-c">&#35;</span>&#32;Captura de calificaciones</p>
+      <p class="simbology-text"><span class="s-a-s">&#35;</span>&#32;Suspensión aniversario SUTCOBAEM(personal sindicalizado)</p>
+      <p class="simbology-text"><span class="r-e">&#35;</span>&#32;Reunion estatal</p>
     </div>
     
     <section class="section month">
