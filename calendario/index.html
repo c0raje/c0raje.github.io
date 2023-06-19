@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: monospace, sans-serif;
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+
+    :root {
+      --background-body: rgb(0 0 30);
+
+      --background-header: rgb(0 0 30);
+      --color-header: rgb(255 255 0);
+      --color-page-name: rgb(255 255 255);
+      --font-size-page-name: 1.8rem;
+
+      --border-color: rgb(255 0 255);
+
+      --color-month-name: rgb(255 255 0);
+      --font-size-month-name: 1.4rem;
+      --color-days: rgb(0 255 255);
+      --color-days2: rgb(0 255 100);
+      --font-size-days: 1rem;
+
+      --color-simbology-text: rgb(255 255 255);
+      --font-size-simbology-text: 1.4rem;
+      --background-i-d-s: linear-gradient(
+        to left, rgba(0, 0, 255, 0.5), rgba(0, 0, 100, 0.4)
+      );
+      --background-f-d-s: linear-gradient(
+        to right, rgba(0, 0, 255, 0.5), rgba(0, 0, 100, 0.4)
+      );
+      --background-c-p: linear-gradient(
+        rgba(0, 0, 0, 0.4)50%, rgba(200, 200, 200, 0.5)50%
+      );
+
+
+      --background-footer: rgb(0 0 30);
+			--color-footer-text: rgb(255 255 255);
+			--color-footer-text-a: rgb(0 255 100);
+			--font-size-footer-text: 1.2rem;
+    }
+
+    body {
+      background: var(--background-body);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 14px;
+      justify-content: space-between;
+      background: var(--background-header);
+      font-size: var(--font-size-header);
+    }
+    .header a {
+      text-decoration: none;
+      color: var(--color-header);
+      padding: 6px;
+      border: 1px solid ;
+      border-radius: 6px;
+    }
+    .header .page-name {
+      font-size: var(--font-size-page-name);
+      color: var(--color-page-name);
+      font-weight: bold;
+    }
+
+    .main {
+      padding: 40px 0px;
+    }
+    .main .month {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 12px;
+      margin: 20px 30px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+    .main .month .month-name {
+      font-size: var(--font-size-month-name);
+      color: var(--color-month-name);
+      font-weight: bold;
+    }
+    .main .month .content-days{
+      display: grid;
+      grid-template-columns: repeat(7, auto);
+      gap: 10px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .main .month .content-days .days {
+      font-size: var(--font-size-days);
+      color: var(--color-days2);
+    }
+    .main .month .content-days .days:nth-child(1) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(2) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(3) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(4) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(5) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(6) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(7) {
+      color: var(--color-days);
+    }
+
+    .main #checkbox-simbology:checked ~ .content-simbology {
+      display: block;
+    }
+
+    .main .content-simbology {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      margin: 10px 20px 30px 30px;
+      border: 1px solid var(--border-color);
+    }
+    .main .content-simbology .simbology-text {
+      font-size: var(--font-size-simbology-text);
+      color: var(--color-simbology-text);
+    }
+
+    .main span {
+      padding: 0px 4px;
+    }
+    .i-d-s {
+      background: var(--background-i-d-s);
+    }
+    .f-d-s {
+      background: var(--background-f-d-s);
+    }
+    .c-p {
+      background: var(--background-c-p);
+    }
+    .f-d-s {
+      background: var(--background-f-d-s);
+    }
+
+    .footer {
+      box-shadow: 0px -2px 6px var(--border-color);
+			padding: 20px 30px;
+			background: var(--background-footer);
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.footer .footer-text {
+			font-size: var(--font-size-footer-text);
+			color: var(--color-footer-text);
+		}
+		.footer .footer-text a {
+			text-decoration: none;
+			color: var(--color-footer-text-a);
+		}
+  </style>
+  <title>Calendario bachilleres</title>
+</head>
+<body>
+  <header class="header">
+    <a href="https://c0raje.github.io/">&lt;</a>
+    <p class="page-name">Calendario bachilleres</p>
+  </header>
+
+  <main class="main">
+    <section class="section month">
+      <p class="month-name">Enero 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days">1</p>
+        <p class="days">2</p>
+        <p class="days">3</p>
+        <p class="days">4</p>
+        <p class="days">5</p>
+        <p class="days">6</p>
+        <p class="days">7</p>
+        <p class="days">8</p>
+        <p class="days">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days">12</p>
+        <p class="days">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days">29</p>
+        <p class="days">30</p>
+        <p class="days">31</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    <input type="checkbox" name="checkbox id="checkbox-simbology">
+    <div class="content-simbology">
+      <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
+      <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
+      <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+    </div>
+    
+    <section class="section month">
+      <p class="month-name">Febrero 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days">2</p>
+        <p class="days">3</p>
+        <p class="days">4</p>
+        <p class="days">5</p>
+        <p class="days">6</p>
+        <p class="days">7</p>
+        <p class="days">8</p>
+        <p class="days">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days">12</p>
+        <p class="days">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    
+    <section class="section month">
+      <p class="month-name">Marzo 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days">2</p>
+        <p class="days">3</p>
+        <p class="days">4</p>
+        <p class="days">5</p>
+        <p class="days">6</p>
+        <p class="days">7</p>
+        <p class="days">8</p>
+        <p class="days">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days">12</p>
+        <p class="days">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days">29</p>
+        <p class="days">30</p>
+        <p class="days">31</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    
+    <section class="section month">
+      <p class="month-name">Abril 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days">2</p>
+        <p class="days">3</p>
+        <p class="days">4</p>
+        <p class="days">5</p>
+        <p class="days">6</p>
+        <p class="days">7</p>
+        <p class="days">8</p>
+        <p class="days">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days">12</p>
+        <p class="days">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days">29</p>
+        <p class="days">30</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    
+    <section class="section month">
+      <p class="month-name">Mayo 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days">2</p>
+        <p class="days">3</p>
+        <p class="days">4</p>
+        <p class="days">5</p>
+        <p class="days">6</p>
+        <p class="days">7</p>
+        <p class="days">8</p>
+        <p class="days">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days">12</p>
+        <p class="days">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days">29</p>
+        <p class="days">30</p>
+        <p class="days">31</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    
+    <section class="section month">
+      <p class="month-name">Junio 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days">2</p>
+        <p class="days">3</p>
+        <p class="days">4</p>
+        <p class="days">5</p>
+        <p class="days">6</p>
+        <p class="days">7</p>
+        <p class="days">8</p>
+        <p class="days">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days">12</p>
+        <p class="days">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days">29</p>
+        <p class="days">30</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    
+    <section class="section month">
+      <p class="month-name">Julio 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days">2</p>
+        <p class="days">3</p>
+        <p class="days">4</p>
+        <p class="days">5</p>
+        <p class="days">6</p>
+        <p class="days">7</p>
+        <p class="days">8</p>
+        <p class="days">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days">12</p>
+        <p class="days">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days">29</p>
+        <p class="days">30</p>
+        <p class="days">31</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+		<p class="footer-text"><a href="https://c0raje.github.io/">C0raje.github.io</a></p>
+		<p class="footer-text">Pagina hecha solo por hobi.</p>
+		<p class="footer-text"><a href="https://wa.me/527351156556/">Contactame!</a></p>
+	</footer>
+</body>
+</html>
