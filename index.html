@@ -4,83 +4,98 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			letter-spacing: 1px;
+			line-height: 1;
+		}
+		body {
+			font-size: 16px;
+			font-family: sans-serif;
+			background: var(--background-body);
+		}
+		:root {
+			--background-body: rgb(0 0 0);
+
+			--background-header: rgb(0 0 0);
+			--color-page-name: rgb(255 255 255);
+			--font-size-page-name: 1.8rem;
+
+			--background-main: rgb(20 20 20);
+			--background-button: rgba(0, 0, 100, 0.8);
+			--color-main-a: rgb(0 255 0);
+			--font-size-main-a: 1.4rem;
+
+			--background-footer: rgb(0 0 0);
+			--color-footer-text: rgb(255 255 255);
+			--color-footer-text-a: rgb(0 255 0);
+			--font-size-footer-text: 1rem;
+		}
+		.header {
+			background: var(--background-header);
+			padding: 6px 8px;
+		}
+		.header .page-name {
+			font-size: var(--font-size-page-name);
+			color: var(--color-page-name);
+		}
+		.main {
+			width: 100%;
+			height: 100vh;
+			padding: 60px;
+			background: var(--background-main);
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.main .button {}
+		.main .button a {
+			background: var(--background-button);
+			padding: 12px;
+			border-radius: 8px;
+			text-decoration: none;
+			color: var(--color-main-a);
+			font-size: var(--font-size-main-a);
+		}
+		.footer {
+			padding: 10px;
+			background: var(--background-footer);
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.footer .footer-text {
+			font-size: var(--font-size-footer-text);
+			color: var(--color-footer-text);
+		}
+		.footer .footer-text a {
+			text-decoration: none;
+			color: var(--color-footer-text-a);
+		}
+	</style>
 	<title>Document</title>
-	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 	<header class="header">
 		<p class="page-name">C0raje</p>
 	</header>
 	<main class="main">
-                <a href="https://c0raje.github.io/guia-fi">
-                        <button>
-                                <p class="btn-name">guia-fi</p>
-                        </button>
-                </a>
-                <a href="https://c0raje.github.io/quiz-pronombres">
-                        <button>
-                                <p class="btn-name">quiz-pronombres</p>
-                        </button>
-                </a>
-		<a href="https://c0raje.github.io/quiz-1">
-			<button>
-				<p class="btn-name">quiz-verbos-1</p>
-			</button>
-		</a>
-		<a href="https://c0raje.github.io/plantilla-verbos">
-			<button>
-				<p class="btn-name">Plantilla-verbos</p>
-			</button>
-		</a>
-		<a href="https://c0raje.github.io/guia">
-			<button>
-				<p class="btn-name">guia-jueves</p>
-			</button>
-		</a>
-		<a href="https://c0raje.github.io/verbos">
-			<button>
-				<p class="btn-name">Verbos - lunes</p>
-			</button>
-		</a>
-		<a href="https://c0raje.github.io/guia-biologia">
-			<button>
-				<p class="btn-name">Guia Biologia</p>
-			</button>
-		</a>
-		<a href="https://c0raje.github.io/ingles">
-			<button>
-				<p class="btn-name">Ingles</p>
-			</button>
-		</a>
-		<a href="https://c0raje.github.io/git-github">
-			<button>
-				<p class="btn-name">Git y Github</p>
-			</button>
-		</a>
-		<a href="https://c0raje.github.io/codigos-html">
-			<button>
-				<p class="btn-name">Tabla de Códigos HTML</p>
-			</button>
-		</a>
-		<a href="https://c0raje.github.io/biologia">
-			<button>
-				<p class="btn-name">Biologia</p>
-			</button>
-		</a>
+		<div class="button"><a href="https://c0raje.github.io/codigos-html">Codigos html</a></div>
+		<div class="button"><a href="https://c0raje.github.io/ingles">Ingles</a></div>
+		<div class="button"><a href="https://c0raje.github.io/plantilla-verbos">Plantilla verbos</a></div>
+		<div class="button"><a href="https://c0raje.github.io/quiz-1">Quiz 1</a></div>
+		<div class="button"><a href="https://c0raje.github.io/quiz-pronombres">Quiz pronombres</a></div>
+		<div class="button"><a href="https://c0raje.github.io/reloj">Reloj</a></div>
+		<div class="button"><a href="https://c0raje.github.io/verbos">Verbos</a></div>
 	</main>
 	<footer class="footer">
-		<div class="column">
-			<p class="column-name">Nombre de columna</p>
-			<p class="column-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur perspiciatis magnam ad natus molestias vitae sed atque consequatur quod, omnis mollitia veritatis inventore reiciendis ipsam repellat. Tempore, minima laboriosam!</p>
-		</div>
-		<div class="column">
-			<p class="column-name">Nombre de columna</p>
-			<p class="column-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat recusandae culpa iure autem asperiores voluptatibus atque iste ab dignissimos? Unde eius asperiores necessitatibus amet suscipit officiis eum? Non, iure.</p>
-		</div>
-		<div class="column">
-			<p class="column-name">Nombre de columna</p>
-			<p class="column-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolore ea distinctio aspernatur odio ex blanditiis laborum placeat? Aliquid quam eos non maxime perspiciatis voluptates molestiae illum excepturi quidem dolore!</p>
-		</div>
+		<p class="footer-text"><a href="https://c0raje.github.io/">C0raje.github.io</a></p>
+		<p class="footer-text">Pagina hecha solo por hobi.</p>
+		<p class="footer-text"><a href="https://wa.me/527351156556/">Contactame!</a></p>
 	</footer>
 </body>
 </html>
