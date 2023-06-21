@@ -19,18 +19,18 @@
       --background-header: rgb(0 0 30);
       --color-header: rgb(255 255 0);
       --color-page-name: rgb(255 255 255);
-      --font-size-page-name: 1.4rem;
+      --font-size-page-name: 1.6rem;
 
       --border-color: rgb(255 0 255);
 
       --color-month-name: rgb(255 255 0);
-      --font-size-month-name: 1rem;
+      --font-size-month-name: 1.2rem;
       --color-days: rgb(0 255 255);
       --color-days2: rgb(0 255 100);
-      --font-size-days: .8rem;
+      --font-size-days: 1rem;
 
       --color-simbology-text: rgb(255 255 255);
-      --font-size-simbology-text: .6rem;
+      --font-size-simbology-text: .8rem;
       --background-i-d-s: linear-gradient(
         to left, rgba(0, 0, 255, 0.5), rgba(0, 0, 100, 0.4)
       );
@@ -58,6 +58,8 @@
       --color-s-a-s: rgb(255 0 0);
       --background-r-e: rgba(160, 160, 160, 0.4);
       --color-r-e: rgb(255 255 0);
+
+      --font-size-before: .6rem;
 
       --background-footer: rgb(0 0 30);
 			--color-footer-text: rgb(255 255 255);
@@ -163,82 +165,267 @@
     .main span {
       padding: 0px 4px;
     }
+    .i-d-s, .f-d-s, .c-p, .f-d-s, .v, .t-c, .e-p, .a-r, .a-e, .a-s, .p-a, .s-l, .s-p-a, .c-r-c-e, .p-i-c-d, .c-c, .s-a-s, .r-e {
+      padding: 4px;
+      position: relative;
+      z-index: 10;
+    }
     .i-d-s {
-      padding: 0px 4px;
       background: var(--background-i-d-s);
     }
+    .i-d-s:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Inicio de semestre";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .f-d-s {
-      padding: 0px 4px;
       background: var(--background-f-d-s);
+    }
+    .f-d-s:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Fin de semestre";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
     }
     .c-p {
-      padding: 0px 4px;
       background: var(--background-c-p);
     }
+    .c-p:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Curso propedeutico";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .f-d-s {
-      padding: 0px 4px;
       background: var(--background-f-d-s);
     }
+    .f-d-s:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Fin de semestre";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .v {
-      padding: 0px 4px;
       color: var(--color-v);
       background: var(--background-v);
     }
+    .v:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Vacaciones";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .t-c {
       border: 1px solid rgb(0 0 0);
-      padding: 0px 4px;
       background: var(--background-t-c);
     }
+    .t-c:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Trabajo colegiado";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .e-p {
-      padding: 0px 4px;
       background: var(--background-e-p);
     }
+    .e-p:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Examenes parciales";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .a-r {
-      padding: 0px 4px;
       background: var(--background-a-r);
     }
+    .a-r:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Asesorias de recuperacion";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .a-e {
-      padding: 0px 4px;
       background: var(--background-a-e);
     }
+    .a-e:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Asesorias extraordinarias";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .a-s {
-      padding: 0px 4px;
       background: var(--background-a-s);
     }
+    .a-s:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Asesorias de suficiencia";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .p-a {
-      padding: 0px 4px;
       background: var(--background-p-a);
     }
+    .p-a:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Planeacion academica";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .s-l {
-      padding: 0px 4px;
       background: var(--background-s-l);
       color: var(--color-s-l);
     }
+    .s-l:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Suspencion de labores";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .s-p-a {
-      padding: 0px 4px;
       background: var(--background-s-p-a);
     }
+    .s-p-a:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Suspencion (periodo de asueto)";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .c-r-c-e {
-      padding: 0px 4px;
       background: var(--background-c-r-c-e)
     }
+    .c-r-c-e:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Curson remedial para curso especial";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .p-i-c-d {
-      padding: 0px 4px;
       background: var(--background-p-i-c-d);
     }
+    .p-i-c-d:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Periodo intersemestral para capacitacion del personal docente y administrativo";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .c-c {
-      padding: 0px 4px;
       background: var(--background-c-c);
     }
+    .c-c:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Captura de calificaciones";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .s-a-s {
-      padding: 0px 4px;
       background: var(--background-s-a-s);
       color: var(--color-s-a-s);
     }
+    .s-a-s:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Suspensión aniversario SUTCOBAEM(personal sindicalizado)";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
+    }
     .r-e {
-      padding: 0px 4px;
       background: var(--background-r-e);
       color: var(--color-r-e);
+    }
+    .r-e:hover::before {
+      top: 0%;
+      left: 100%;
+      content: "Reunion estatal";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      z-index: 20;
+      font-size: var(--font-size-before);
     }
 
     .footer {
