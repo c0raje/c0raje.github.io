@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: monospace, sans-serif;
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+
+    :root {
+      --background-body: rgb(0 0 30);
+
+      --background-header: rgb(0 0 30);
+      --color-header: rgb(255 255 0);
+      --color-page-name: rgb(255 255 255);
+      --font-size-header: 1.8rem;
+
+      --border-content-code: rgb(0 255 255);
+      --color-title-code: rgb(255 255 255);
+      --font-size-title-code: 1.4rem;
+      --color-code: rgb(255 255 0);
+      --color-code2: rgb(200 200 200);
+      --color-code3: rgb(0 255 0);
+      --font-size-code: 1rem;
+    }
+
+    body {
+      background: var(--background-body);
+      font-size: 16px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 14px;
+      justify-content: space-between;
+      background: var(--background-header);
+      font-size: var(--font-size-header);
+    }
+    .header a {
+      text-decoration: none;
+      color: var(--color-header);
+      padding: 6px;
+      border: 1px solid ;
+      border-radius: 6px;
+    }
+    .header .page-name {
+      color: var(--color-page-name);
+    }
+
+    .main {}
+    .main .content-code {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 14px;
+      align-items: end;
+      margin: 30px;
+      padding: 10px;
+      border: solid 1px var(--border-content-code);
+      border-radius: 10px;
+    }
+    .main .content-code .title-code {
+      font-size: var(--font-size-title-code);
+      color: var(--color-title-code);
+    }
+    .main .content-code .code {
+      font-size: var(--font-size-code);
+      border-bottom: 1px solid;
+    }
+    .main .content-code .code:nth-child(3n - 2) {
+      color: var(--color-code3);
+    }
+    .main .content-code .code:nth-child(3n - 1) {
+      color: var(--color-code);
+    }
+    .main .content-code .code:nth-child(3n) {
+      color: var(--color-code2);
+    }
+  </style>
+  <title>Codigos HTML</title>
+</head>
+<body>
+  <header class="header">
+    <a href="https://c0raje.github.io/repo1/">&lt;</a>
+    <p class="page-name">Tabla de Códigos HTML</p>
+  </header>
+  
+  <main class="main">
+    <div class="content-code">
+
+      <p class="title-code">Símbolo</p>
+      <p class="title-code">HTML Numero</p>
+      <p class="title-code">HTML Nombre</p>
+  
+      <p class="code">&#32;</p>
+      <p class="code">&amp;&#35;32&#59;</p>
+      <p class="code">Espacio "&#32;"</p>
+  
+      <p class="code">&#33;</p>
+      <p class="code">&amp;&#35;33&#59;</p>
+      <p class="code">signo de cierre de exclamación</p>
+  
+      <p class="code">&#34;</p>
+      <p class="code">&amp;&#35;34&#59;</p>
+      <p class="code">comillas dobles</p>
+  
+      <p class="code">&#35;</p>
+      <p class="code">&amp;&#35;35&#59;</p>
+      <p class="code">signo de número</p>
+  
+      <p class="code">&#36;</p>
+      <p class="code">&amp;&#35;36&#59;</p>
+      <p class="code">signo de dólar</p>
+  
+      <p class="code">&#37;</p>
+      <p class="code">&amp;&#35;37&#59;</p>
+      <p class="code">signo de porcentaje</p>
+  
+      <p class="code">&#38;</p>
+      <p class="code">&amp;&#35;38&#59;</p>
+      <p class="code">signo "&#38;" / ampersand</p>
+  
+      <p class="code">&#39;</p>
+      <p class="code">&amp;&#35;39&#59;</p>
+      <p class="code">comilla / apóstrofe</p>
+  
+      <p class="code">&#40;</p>
+      <p class="code">&amp;&#35;40&#59;</p>
+      <p class="code">paréntesis izquierdo</p>
+  
+      <p class="code">&#41;</p>
+      <p class="code">&amp;&#35;41&#59;</p>
+      <p class="code">paréntesis derecho</p>
+  
+      <p class="code">&#42;</p>
+      <p class="code">&amp;&#35;42&#59;</p>
+      <p class="code">asterisco</p>
+  
+      <p class="code">&#43;</p>
+      <p class="code">&amp;&#35;43&#59;</p>
+      <p class="code">signo de más / adición</p>
+  
+      <p class="code">&#44;</p>
+      <p class="code">&amp;&#35;44&#59;</p>
+      <p class="code">coma</p>
+  
+      <p class="code">&#45;</p>
+      <p class="code">&amp;&#35;45&#59;</p>
+      <p class="code">signo de menos / sustracción / guíon</p>
+  
+      <p class="code">&#46;</p>
+      <p class="code">&amp;&#35;46&#59;</p>
+      <p class="code">punto</p>
+  
+      <p class="code">&#47;</p>
+      <p class="code">&amp;&#35;47&#59;</p>
+      <p class="code">barra oblicua - barra de división</p>
+  
+      <p class="code">&#48;</p>
+      <p class="code">&amp;&#35;48&#59;</p>
+      <p class="code">cero</p>
+  
+      <p class="code">&#49;</p>
+      <p class="code">&amp;&#35;49&#59;</p>
+      <p class="code">uno</p>
+  
+      <p class="code">&#50;</p>
+      <p class="code">&amp;&#35;50&#59;</p>
+      <p class="code">dos</p>
+  
+      <p class="code">&#51;</p>
+      <p class="code">&amp;&#35;51&#59;</p>
+      <p class="code">tres</p>
+  
+      <p class="code">&#52;</p>
+      <p class="code">&amp;&#35;52&#59;</p>
+      <p class="code">cuatro</p>
+  
+      <p class="code">&#53;</p>
+      <p class="code">&amp;&#35;53&#59;</p>
+      <p class="code">cinco</p>
+  
+      <p class="code">&#54;</p>
+      <p class="code">&amp;&#35;54&#59;</p>
+      <p class="code">seis</p>
+  
+      <p class="code">&#55;</p>
+      <p class="code">&amp;&#35;55&#59;</p>
+      <p class="code">siete</p>
+  
+      <p class="code">&#56;</p>
+      <p class="code">&amp;&#35;56&#59;</p>
+      <p class="code">ocho</p>
+  
+      <p class="code">&#57;</p>
+      <p class="code">&amp;&#35;57&#59;</p>
+      <p class="code">nueve</p>
+  
+      <p class="code">&#58;</p>
+      <p class="code">&amp;&#35;50&#58;</p>
+      <p class="code">dos puntos</p>
+  
+      <p class="code">&#59;</p>
+      <p class="code">&amp;&#35;59&#59;</p>
+      <p class="code">punto y coma</p>
+  
+      <p class="code">&#60;</p>
+      <p class="code">&amp;&#35;60&#59;</p>
+      <p class="code">signo de menor que</p>
+  
+      <p class="code">&#61;</p>
+      <p class="code">&amp;&#35;61&#59;</p>
+      <p class="code">signo de igual</p>
+  
+      <p class="code">&#62;</p>
+      <p class="code">&amp;&#35;62&#59;</p>
+      <p class="code">signo de mayor que</p>
+  
+      <p class="code">&#63;</p>
+      <p class="code">&amp;&#35;63&#59;</p>
+      <p class="code">signo de interrogación - cierre</p>
+  
+      <p class="code">&#64;</p>
+      <p class="code">&amp;&#35;64&#59;</p>
+      <p class="code">símbolo arroba</p>
+  
+      <p class="code">&#65;</p>
+      <p class="code">&amp;&#35;65&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#66;</p>
+      <p class="code">&amp;&#35;66&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#67;</p>
+      <p class="code">&amp;&#35;67&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#68;</p>
+      <p class="code">&amp;&#35;68&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#69;</p>
+      <p class="code">&amp;&#35;69&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#70;</p>
+      <p class="code">&amp;&#35;70&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#71;</p>
+      <p class="code">&amp;&#35;71&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#72;</p>
+      <p class="code">&amp;&#35;72&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#73;</p>
+      <p class="code">&amp;&#35;73&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#74;</p>
+      <p class="code">&amp;&#35;74&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#75;</p>
+      <p class="code">&amp;&#35;75&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#76;</p>
+      <p class="code">&amp;&#35;76&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#77;</p>
+      <p class="code">&amp;&#35;77&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#78;</p>
+      <p class="code">&amp;&#35;78&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#79;</p>
+      <p class="code">&amp;&#35;79&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#80;</p>
+      <p class="code">&amp;&#35;80&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#81;</p>
+      <p class="code">&amp;&#35;81&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#82;</p>
+      <p class="code">&amp;&#35;82&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#83;</p>
+      <p class="code">&amp;&#35;83&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#84;</p>
+      <p class="code">&amp;&#35;84&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#85;</p>
+      <p class="code">&amp;&#35;85&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#86;</p>
+      <p class="code">&amp;&#35;86&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#87;</p>
+      <p class="code">&amp;&#35;87&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#88;</p>
+      <p class="code">&amp;&#35;88&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#89;</p>
+      <p class="code">&amp;&#35;89&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#90;</p>
+      <p class="code">&amp;&#35;90&#59;</p>
+      <p class="code"></p>
+  
+      <p class="code">&#91;</p>
+      <p class="code">&amp;&#35;91&#59;</p>
+      <p class="code">corchete izquierdo</p>
+  
+      <p class="code">&#92;</p>
+      <p class="code">&amp;&#35;92&#59;</p>
+      <p class="code">barra inversa</p>
+  
+      <p class="code">&#93;</p>
+      <p class="code">&amp;&#35;93&#59;</p>
+      <p class="code">corchete derecho</p>
+  
+      <p class="code">&#94;</p>
+      <p class="code">&amp;&#35;94&#59;</p>
+      <p class="code">signo de intercalación - acento</p>
+  
+      <p class="code">&#95;</p>
+      <p class="code">&amp;&#35;95&#59;</p>
+      <p class="code">circunflejo</p>
+  
+      <p class="code">&#96;</p>
+      <p class="code">&amp;&#35;96&#59;</p>
+      <p class="code">signo de subrayado</p>
+  
+      <p class="code">&#97;</p>
+      <p class="code">&amp;&#35;97&#59;</p>
+      <p class="code">acento grave</p>
+    </div>
+  </main>
+</body>
+</html>

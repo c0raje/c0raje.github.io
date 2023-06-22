@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: monospace, sans-serif;
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+
+    :root {
+      --background-body: rgb(0 0 30);
+
+      --background-header: rgb(0 0 30);
+      --color-header: rgb(255 255 0);
+      --color-page-name: rgb(255 255 255);
+      --font-size-page-name: 1.4rem;
+
+      --border-color: rgb(255 0 255);
+
+      --color-month-name: rgb(255 255 0);
+      --font-size-month-name: 1.2rem;
+      --color-days: rgb(0 255 255);
+      --color-days2: rgb(0 255 100);
+      --font-size-days: 1rem;
+
+      --color-simbology-text: rgb(255 255 255);
+      --font-size-simbology-text: .8rem;
+      --background-i-d-s: linear-gradient(
+        to left, rgba(0, 0, 255, 0.5), rgba(0, 0, 100, 0.4)
+      );
+      --background-f-d-s: linear-gradient(
+        to right, rgba(0, 0, 255, 0.5), rgba(0, 0, 100, 0.4)
+      );
+      --background-c-p: linear-gradient(
+        rgba(0, 0, 0, 0.4)50%, rgba(200, 200, 200, 0.5)50%
+      );
+      --color-v: rgb(255 0 0);
+      --background-v: rgba(255, 255, 255, 0.3);
+      --background-t-c: rgba(255, 255, 0, 0.5);
+      --background-e-p: rgba(100, 100, 0, 0.5);
+      --background-a-r: rgba(0, 160, 160, 0.5);
+      --background-a-e: rgba(0, 0, 160, 0.5);
+      --background-a-s: rgba(0, 160, 0, 0.5);
+      --background-p-a: rgba(0, 0, 0, 0.6);
+      --background-s-l: rgba(255, 0, 0, 0.5);
+      --color-s-l: rgb(255, 255, 255);
+      --background-s-p-a: rgba(220, 120, 0, 0.5);
+      --background-c-r-c-e: rgba(80, 80, 120, 0.5);
+      --background-p-i-c-d: rgba(160, 0, 160, 0.5);
+      --background-c-c: rgba(160, 200, 0, 0.5);
+      --background-s-a-s: rgba(255, 255, 255, 0.4);
+      --color-s-a-s: rgb(255 0 0);
+      --background-r-e: rgba(160, 160, 160, 0.4);
+      --color-r-e: rgb(255 255 0);
+
+      --font-size-after: .6rem;
+
+      --background-footer: rgb(0 0 30);
+			--color-footer-text: rgb(255 255 255);
+			--color-footer-text-a: rgb(0 255 100);
+			--font-size-footer-text: 1.2rem;
+    }
+
+    body {
+      background: var(--background-body);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 14px;
+      justify-content: space-between;
+      box-shadow: 0px 4px 10px var(--border-color);
+      background: var(--background-header);
+      font-size: var(--font-size-header);
+    }
+    .header a {
+      text-decoration: none;
+      color: var(--color-header);
+      padding: 6px;
+      border: 1px solid ;
+      border-radius: 6px;
+    }
+    .header .page-name {
+      font-size: var(--font-size-page-name);
+      color: var(--color-page-name);
+      font-weight: bold;
+    }
+
+    .main {
+      padding: 40px 0px;
+    }
+    .main .month {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 12px;
+      margin: 20px 30px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      /* box-shadow: -1px -1px 10px var(--border-color), 1px 1px 10px var(--border-color); */
+    }
+    .main .month .month-name {
+      font-size: var(--font-size-month-name);
+      color: var(--color-month-name);
+      font-weight: bold;
+    }
+    .main .month .content-days{
+      display: grid;
+      grid-template-columns: repeat(7, auto);
+      gap: 10px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .main .month .content-days .days {
+      font-size: var(--font-size-days);
+      color: var(--color-days2);
+    }
+    .main .month .content-days .days:nth-child(1) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(2) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(3) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(4) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(5) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(6) {
+      color: var(--color-days);
+    }
+    .main .month .content-days .days:nth-child(7) {
+      color: var(--color-days);
+    }
+
+    .main .content-simbology {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 10px;
+      margin: 10px 20px 40px 60px;
+      border: 1px solid var(--border-color);
+      box-shadow: -6px 0px 6px var(--border-color);
+    }
+    .main .content-simbology .simbology-text {
+      font-size: var(--font-size-simbology-text);
+      color: var(--color-simbology-text);
+    }
+
+    .main span {
+      padding: 0px 4px;
+    }
+    .i-d-s, .f-d-s, .c-p, .f-d-s, .v, .t-c, .e-p, .a-r, .a-e, .a-s, .p-a, .s-l, .s-p-a, .c-r-c-e, .p-i-c-d, .c-c, .s-a-s, .r-e {
+      padding: 4px;
+      position: relative;
+    }
+    .i-d-s {
+      background: var(--background-i-d-s);
+    }
+    .i-d-s:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Inicio de semestre";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .f-d-s {
+      background: var(--background-f-d-s);
+    }
+    .f-d-s:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Fin de semestre";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .c-p {
+      background: var(--background-c-p);
+    }
+    .c-p:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Curso propedeutico";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .f-d-s {
+      background: var(--background-f-d-s);
+    }
+    .f-d-s:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Fin de semestre";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .v {
+      color: var(--color-v);
+      background: var(--background-v);
+    }
+    .v:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Vacaciones";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .t-c {
+      border: 1px solid rgb(0 0 0);
+      background: var(--background-t-c);
+    }
+    .t-c:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Trabajo colegiado";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .e-p {
+      background: var(--background-e-p);
+    }
+    .e-p:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Examenes parciales";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .a-r {
+      background: var(--background-a-r);
+    }
+    .a-r:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Asesorias de recuperacion";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .a-e {
+      background: var(--background-a-e);
+    }
+    .a-e:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Asesorias extraordinarias";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .a-s {
+      background: var(--background-a-s);
+    }
+    .a-s:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Asesorias de suficiencia";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .p-a {
+      background: var(--background-p-a);
+    }
+    .p-a:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Planeacion academica";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .s-l {
+      background: var(--background-s-l);
+      color: var(--color-s-l);
+    }
+    .s-l:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Suspencion de labores";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .s-p-a {
+      background: var(--background-s-p-a);
+    }
+    .s-p-a:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Suspencion (periodo de asueto)";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .c-r-c-e {
+      background: var(--background-c-r-c-e)
+    }
+    .c-r-c-e:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Curson remedial para curso especial";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .p-i-c-d {
+      background: var(--background-p-i-c-d);
+    }
+    .p-i-c-d:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Periodo intersemestral para capacitacion del personal docente y administrativo";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .c-c {
+      background: var(--background-c-c);
+    }
+    .c-c:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Captura de calificaciones";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .s-a-s {
+      background: var(--background-s-a-s);
+      color: var(--color-s-a-s);
+    }
+    .s-a-s:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Suspensión aniversario SUTCOBAEM(personal sindicalizado)";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+    .r-e {
+      background: var(--background-r-e);
+      color: var(--color-r-e);
+    }
+    .r-e:hover::after {
+      top: -4px;
+      left: -80%;
+      content: "Reunion estatal";
+      padding: 6px;
+      color: rgb(255 255 0);
+      background: rgb(0 0 0);
+      position: absolute;
+      font-size: var(--font-size-after);
+    }
+
+    .footer {
+      box-shadow: 0px -2px 6px var(--border-color);
+			padding: 20px 30px;
+			background: var(--background-footer);
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		.footer .footer-text {
+			font-size: var(--font-size-footer-text);
+			color: var(--color-footer-text);
+		}
+		.footer .footer-text a {
+			text-decoration: none;
+			color: var(--color-footer-text-a);
+		}
+  </style>
+  <title>Calendario bachilleres</title>
+</head>
+<body>
+  <header class="header">
+    <a href="https://c0raje.github.io/repo1/">&lt;</a>
+    <p class="page-name">Calendario bachilleres</p>
+  </header>
+
+  <main class="main">
+    <section class="section month">
+      <p class="month-name">Enero 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days s-l">1</p>
+        <p class="days v">2</p>
+        <p class="days v">3</p>
+        <p class="days v">4</p>
+        <p class="days v">5</p>
+        <p class="days v">6</p>
+        <p class="days">7</p>
+        <p class="days v">8</p>
+        <p class="days">9</p>
+        <p class="days a-e">10</p>
+        <p class="days a-e">11</p>
+        <p class="days a-e">12</p>
+        <p class="days a-e">13</p>
+        <p class="days">14</p>
+        <p class="days v">15</p>
+        <p class="days a-e">16</p>
+        <p class="days c-c">17</p>
+        <p class="days">18</p>
+        <p class="days a-s">19</p>
+        <p class="days a-s">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days a-s">23</p>
+        <p class="days a-s">24</p>
+        <p class="days a-s">25</p>
+        <p class="days f-d-s">26</p>
+        <p class="days p-i-c-d">27</p>
+        <p class="days">28</p>
+        <p class="days">29</p>
+        <p class="days p-i-c-d">30</p>
+        <p class="days p-i-c-d">31</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    <div class="content-simbology">
+      <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
+      <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
+      <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+      <p class="simbology-text"><span class="v">&#35;</span>&#32;Vacaciones</p>
+      <p class="simbology-text"><span class="t-c">&#35;</span>&#32;Trabajo colegiado</p>
+      <p class="simbology-text"><span class="e-p">&#35;</span>&#32;Exámenes parciales</p>
+      <p class="simbology-text"><span class="a-r">&#35;</span>&#32;Asesorías de recuperación</p>
+      <p class="simbology-text"><span class="a-e">&#35;</span>&#32;Asesorías extraordinarias</p>
+      <p class="simbology-text"><span class="a-s">&#35;</span>&#32;Asesorías de suficiencia</p>
+      <p class="simbology-text"><span class="p-a">&#35;</span>&#32;Planeación Académica</p>
+      <p class="simbology-text"><span class="s-l">&#35;</span>&#32;Suspensión de labores</p>
+      <p class="simbology-text"><span class="s-p-a">&#35;</span>&#32;Suspensión (periodo de asueto)</p>
+      <p class="simbology-text"><span class="c-r-c-e">&#35;</span>&#32;Curso remedial para curso especial</p>
+      <p class="simbology-text"><span class="p-i-c-d">&#35;</span>&#32;Periodo intersemestral para capacitacion del personal docente y administrativo</p>
+      <p class="simbology-text"><span class="c-c">&#35;</span>&#32;Captura de calificaciones</p>
+      <p class="simbology-text"><span class="s-a-s">&#35;</span>&#32;Suspensión aniversario SUTCOBAEM(personal sindicalizado)</p>
+      <p class="simbology-text"><span class="r-e">&#35;</span>&#32;Reunion estatal</p>
+    </div>
+    
+    <section class="section month">
+      <p class="month-name">Febrero 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days p-i-c-d">1</p>
+        <p class="days i-d-s">2</p>
+        <p class="days">3</p>
+        <p class="days">4</p>
+        <p class="days v">5</p>
+        <p class="days s-l">6</p>
+        <p class="days">7</p>
+        <p class="days">8</p>
+        <p class="days">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days v">12</p>
+        <p class="days">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days">18</p>
+        <p class="days v">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days v">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    <div class="content-simbology">
+      <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
+      <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
+      <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+      <p class="simbology-text"><span class="v">&#35;</span>&#32;Vacaciones</p>
+      <p class="simbology-text"><span class="t-c">&#35;</span>&#32;Trabajo colegiado</p>
+      <p class="simbology-text"><span class="e-p">&#35;</span>&#32;Exámenes parciales</p>
+      <p class="simbology-text"><span class="a-r">&#35;</span>&#32;Asesorías de recuperación</p>
+      <p class="simbology-text"><span class="a-e">&#35;</span>&#32;Asesorías extraordinarias</p>
+      <p class="simbology-text"><span class="a-s">&#35;</span>&#32;Asesorías de suficiencia</p>
+      <p class="simbology-text"><span class="p-a">&#35;</span>&#32;Planeación Académica</p>
+      <p class="simbology-text"><span class="s-l">&#35;</span>&#32;Suspensión de labores</p>
+      <p class="simbology-text"><span class="s-p-a">&#35;</span>&#32;Suspensión (periodo de asueto)</p>
+      <p class="simbology-text"><span class="c-r-c-e">&#35;</span>&#32;Curso remedial para curso especial</p>
+      <p class="simbology-text"><span class="p-i-c-d">&#35;</span>&#32;Periodo intersemestral para capacitacion del personal docente y administrativo</p>
+      <p class="simbology-text"><span class="c-c">&#35;</span>&#32;Captura de calificaciones</p>
+      <p class="simbology-text"><span class="s-a-s">&#35;</span>&#32;Suspensión aniversario SUTCOBAEM(personal sindicalizado)</p>
+      <p class="simbology-text"><span class="r-e">&#35;</span>&#32;Reunion estatal</p>
+    </div>
+    
+    <section class="section month">
+      <p class="month-name">Marzo 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days e-p">2</p>
+        <p class="days e-p">3</p>
+        <p class="days v">4</p>
+        <p class="days v">5</p>
+        <p class="days e-p">6</p>
+        <p class="days e-p">7</p>
+        <p class="days e-p">8</p>
+        <p class="days c-c">9</p>
+        <p class="days c-c">10</p>
+        <p class="days a-e">11</p>
+        <p class="days v">12</p>
+        <p class="days c-c">13</p>
+        <p class="days">14</p>
+        <p class="days">15</p>
+        <p class="days">16</p>
+        <p class="days t-c">17</p>
+        <p class="days a-e">18</p>
+        <p class="days v">19</p>
+        <p class="days s-l">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days a-e">25</p>
+        <p class="days v">26</p>
+        <p class="days">27</p>
+        <p class="days">28</p>
+        <p class="days">29</p>
+        <p class="days">30</p>
+        <p class="days">31</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    <div class="content-simbology">
+      <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
+      <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
+      <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+      <p class="simbology-text"><span class="v">&#35;</span>&#32;Vacaciones</p>
+      <p class="simbology-text"><span class="t-c">&#35;</span>&#32;Trabajo colegiado</p>
+      <p class="simbology-text"><span class="e-p">&#35;</span>&#32;Exámenes parciales</p>
+      <p class="simbology-text"><span class="a-r">&#35;</span>&#32;Asesorías de recuperación</p>
+      <p class="simbology-text"><span class="a-e">&#35;</span>&#32;Asesorías extraordinarias</p>
+      <p class="simbology-text"><span class="a-s">&#35;</span>&#32;Asesorías de suficiencia</p>
+      <p class="simbology-text"><span class="p-a">&#35;</span>&#32;Planeación Académica</p>
+      <p class="simbology-text"><span class="s-l">&#35;</span>&#32;Suspensión de labores</p>
+      <p class="simbology-text"><span class="s-p-a">&#35;</span>&#32;Suspensión (periodo de asueto)</p>
+      <p class="simbology-text"><span class="c-r-c-e">&#35;</span>&#32;Curso remedial para curso especial</p>
+      <p class="simbology-text"><span class="p-i-c-d">&#35;</span>&#32;Periodo intersemestral para capacitacion del personal docente y administrativo</p>
+      <p class="simbology-text"><span class="c-c">&#35;</span>&#32;Captura de calificaciones</p>
+      <p class="simbology-text"><span class="s-a-s">&#35;</span>&#32;Suspensión aniversario SUTCOBAEM(personal sindicalizado)</p>
+      <p class="simbology-text"><span class="r-e">&#35;</span>&#32;Reunion estatal</p>
+    </div>
+    
+    <section class="section month">
+      <p class="month-name">Abril 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days v">2</p>
+        <p class="days v">3</p>
+        <p class="days v">4</p>
+        <p class="days v">5</p>
+        <p class="days v">6</p>
+        <p class="days v">7</p>
+        <p class="days">8</p>
+        <p class="days v">9</p>
+        <p class="days v">10</p>
+        <p class="days v">11</p>
+        <p class="days v">12</p>
+        <p class="days v">13</p>
+        <p class="days v">14</p>
+        <p class="days">15</p>
+        <p class="days v">16</p>
+        <p class="days v">17</p>
+        <p class="days">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days e-p">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days e-p">24</p>
+        <p class="days e-p">25</p>
+        <p class="days e-p">26</p>
+        <p class="days e-p">27</p>
+        <p class="days c-c">28</p>
+        <p class="days">29</p>
+        <p class="days v">30</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    <div class="content-simbology">
+      <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
+      <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
+      <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+      <p class="simbology-text"><span class="v">&#35;</span>&#32;Vacaciones</p>
+      <p class="simbology-text"><span class="t-c">&#35;</span>&#32;Trabajo colegiado</p>
+      <p class="simbology-text"><span class="e-p">&#35;</span>&#32;Exámenes parciales</p>
+      <p class="simbology-text"><span class="a-r">&#35;</span>&#32;Asesorías de recuperación</p>
+      <p class="simbology-text"><span class="a-e">&#35;</span>&#32;Asesorías extraordinarias</p>
+      <p class="simbology-text"><span class="a-s">&#35;</span>&#32;Asesorías de suficiencia</p>
+      <p class="simbology-text"><span class="p-a">&#35;</span>&#32;Planeación Académica</p>
+      <p class="simbology-text"><span class="s-l">&#35;</span>&#32;Suspensión de labores</p>
+      <p class="simbology-text"><span class="s-p-a">&#35;</span>&#32;Suspensión (periodo de asueto)</p>
+      <p class="simbology-text"><span class="c-r-c-e">&#35;</span>&#32;Curso remedial para curso especial</p>
+      <p class="simbology-text"><span class="p-i-c-d">&#35;</span>&#32;Periodo intersemestral para capacitacion del personal docente y administrativo</p>
+      <p class="simbology-text"><span class="c-c">&#35;</span>&#32;Captura de calificaciones</p>
+      <p class="simbology-text"><span class="s-a-s">&#35;</span>&#32;Suspensión aniversario SUTCOBAEM(personal sindicalizado)</p>
+      <p class="simbology-text"><span class="r-e">&#35;</span>&#32;Reunion estatal</p>
+    </div>
+    
+    <section class="section month">
+      <p class="month-name">Mayo 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days s-l">1</p>
+        <p class="days c-c">2</p>
+        <p class="days c-c">3</p>
+        <p class="days">4</p>
+        <p class="days s-l">5</p>
+        <p class="days">6</p>
+        <p class="days v">7</p>
+        <p class="days">8</p>
+        <p class="days t-c">9</p>
+        <p class="days">10</p>
+        <p class="days">11</p>
+        <p class="days">12</p>
+        <p class="days">13</p>
+        <p class="days v">14</p>
+        <p class="days s-l">15</p>
+        <p class="days">16</p>
+        <p class="days">17</p>
+        <p class="days r-e">18</p>
+        <p class="days">19</p>
+        <p class="days">20</p>
+        <p class="days">21</p>
+        <p class="days">22</p>
+        <p class="days">23</p>
+        <p class="days">24</p>
+        <p class="days">25</p>
+        <p class="days e-p">26</p>
+        <p class="days">27</p>
+        <p class="days v">28</p>
+        <p class="days e-p">29</p>
+        <p class="days e-p">30</p>
+        <p class="days e-p">31</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    <div class="content-simbology">
+      <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
+      <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
+      <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+      <p class="simbology-text"><span class="v">&#35;</span>&#32;Vacaciones</p>
+      <p class="simbology-text"><span class="t-c">&#35;</span>&#32;Trabajo colegiado</p>
+      <p class="simbology-text"><span class="e-p">&#35;</span>&#32;Exámenes parciales</p>
+      <p class="simbology-text"><span class="a-r">&#35;</span>&#32;Asesorías de recuperación</p>
+      <p class="simbology-text"><span class="a-e">&#35;</span>&#32;Asesorías extraordinarias</p>
+      <p class="simbology-text"><span class="a-s">&#35;</span>&#32;Asesorías de suficiencia</p>
+      <p class="simbology-text"><span class="p-a">&#35;</span>&#32;Planeación Académica</p>
+      <p class="simbology-text"><span class="s-l">&#35;</span>&#32;Suspensión de labores</p>
+      <p class="simbology-text"><span class="s-p-a">&#35;</span>&#32;Suspensión (periodo de asueto)</p>
+      <p class="simbology-text"><span class="c-r-c-e">&#35;</span>&#32;Curso remedial para curso especial</p>
+      <p class="simbology-text"><span class="p-i-c-d">&#35;</span>&#32;Periodo intersemestral para capacitacion del personal docente y administrativo</p>
+      <p class="simbology-text"><span class="c-c">&#35;</span>&#32;Captura de calificaciones</p>
+      <p class="simbology-text"><span class="s-a-s">&#35;</span>&#32;Suspensión aniversario SUTCOBAEM(personal sindicalizado)</p>
+      <p class="simbology-text"><span class="r-e">&#35;</span>&#32;Reunion estatal</p>
+    </div>
+    
+    <section class="section month">
+      <p class="month-name">Junio 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days e-p">1</p>
+        <p class="days c-c">2</p>
+        <p class="days">3</p>
+        <p class="days v">4</p>
+        <p class="days e-p">5</p>
+        <p class="days e-p">6</p>
+        <p class="days">7</p>
+        <p class="days t-c">8</p>
+        <p class="days a-r">9</p>
+        <p class="days">10</p>
+        <p class="days v">11</p>
+        <p class="days a-r">12</p>
+        <p class="days a-r">13</p>
+        <p class="days a-r">14</p>
+        <p class="days a-r">15</p>
+        <p class="days c-c">16</p>
+        <p class="days">17</p>
+        <p class="days v">18</p>
+        <p class="days c-c">19</p>
+        <p class="days">20</p>
+        <p class="days a-e">21</p>
+        <p class="days a-e">22</p>
+        <p class="days a-e">23</p>
+        <p class="days">24</p>
+        <p class="days v">25</p>
+        <p class="days a-e">26</p>
+        <p class="days a-e">27</p>
+        <p class="days c-c">28</p>
+        <p class="days">29</p>
+        <p class="days a-s">30</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    <div class="content-simbology">
+      <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
+      <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
+      <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+      <p class="simbology-text"><span class="v">&#35;</span>&#32;Vacaciones</p>
+      <p class="simbology-text"><span class="t-c">&#35;</span>&#32;Trabajo colegiado</p>
+      <p class="simbology-text"><span class="e-p">&#35;</span>&#32;Exámenes parciales</p>
+      <p class="simbology-text"><span class="a-r">&#35;</span>&#32;Asesorías de recuperación</p>
+      <p class="simbology-text"><span class="a-e">&#35;</span>&#32;Asesorías extraordinarias</p>
+      <p class="simbology-text"><span class="a-s">&#35;</span>&#32;Asesorías de suficiencia</p>
+      <p class="simbology-text"><span class="p-a">&#35;</span>&#32;Planeación Académica</p>
+      <p class="simbology-text"><span class="s-l">&#35;</span>&#32;Suspensión de labores</p>
+      <p class="simbology-text"><span class="s-p-a">&#35;</span>&#32;Suspensión (periodo de asueto)</p>
+      <p class="simbology-text"><span class="c-r-c-e">&#35;</span>&#32;Curso remedial para curso especial</p>
+      <p class="simbology-text"><span class="p-i-c-d">&#35;</span>&#32;Periodo intersemestral para capacitacion del personal docente y administrativo</p>
+      <p class="simbology-text"><span class="c-c">&#35;</span>&#32;Captura de calificaciones</p>
+      <p class="simbology-text"><span class="s-a-s">&#35;</span>&#32;Suspensión aniversario SUTCOBAEM(personal sindicalizado)</p>
+      <p class="simbology-text"><span class="r-e">&#35;</span>&#32;Reunion estatal</p>
+    </div>
+    
+    <section class="section month">
+      <p class="month-name">Julio 2023</p>
+      <div class="content-days">
+        <p class="days">D</p>
+        <p class="days">L</p>
+        <p class="days">M</p>
+        <p class="days">M</p>
+        <p class="days">J</p>
+        <p class="days">V</p>
+        <p class="days">S</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days">1</p>
+        <p class="days v">2</p>
+        <p class="days a-s">3</p>
+        <p class="days a-s">4</p>
+        <p class="days a-s">5</p>
+        <p class="days a-s">6</p>
+        <p class="days f-d-s">7</p>
+        <p class="days">8</p>
+        <p class="days v">9</p>
+        <p class="days s-p-a">10</p>
+        <p class="days s-p-a">11</p>
+        <p class="days s-p-a">12</p>
+        <p class="days s-p-a">13</p>
+        <p class="days s-p-a">14</p>
+        <p class="days">15</p>
+        <p class="days v">16</p>
+        <p class="days s-p-a">17</p>
+        <p class="days s-p-a">18</p>
+        <p class="days s-p-a">19</p>
+        <p class="days s-p-a">20</p>
+        <p class="days s-p-a">21</p>
+        <p class="days">22</p>
+        <p class="days v">23</p>
+        <p class="days s-p-a">24</p>
+        <p class="days s-p-a">25</p>
+        <p class="days s-p-a">26</p>
+        <p class="days s-p-a">27</p>
+        <p class="days s-p-a">28</p>
+        <p class="days">29</p>
+        <p class="days v">30</p>
+        <p class="days">31</p>
+        <p class="days"></p>
+        <p class="days"></p>
+        <p class="days"></p>
+      </div>
+    </section>
+    <div class="content-simbology">
+      <p class="simbology-text"><span class="i-d-s">&#35;</span>&#32;Inicio de Semestre</p>
+      <p class="simbology-text"><span class="f-d-s">&#35;</span>&#32;Fin de Semestre</p>
+      <p class="simbology-text"><span class="c-p">&#35;</span>&#32;Curso propedeutico</p>
+      <p class="simbology-text"><span class="v">&#35;</span>&#32;Vacaciones</p>
+      <p class="simbology-text"><span class="t-c">&#35;</span>&#32;Trabajo colegiado</p>
+      <p class="simbology-text"><span class="e-p">&#35;</span>&#32;Exámenes parciales</p>
+      <p class="simbology-text"><span class="a-r">&#35;</span>&#32;Asesorías de recuperación</p>
+      <p class="simbology-text"><span class="a-e">&#35;</span>&#32;Asesorías extraordinarias</p>
+      <p class="simbology-text"><span class="a-s">&#35;</span>&#32;Asesorías de suficiencia</p>
+      <p class="simbology-text"><span class="p-a">&#35;</span>&#32;Planeación Académica</p>
+      <p class="simbology-text"><span class="s-l">&#35;</span>&#32;Suspensión de labores</p>
+      <p class="simbology-text"><span class="s-p-a">&#35;</span>&#32;Suspensión (periodo de asueto)</p>
+      <p class="simbology-text"><span class="c-r-c-e">&#35;</span>&#32;Curso remedial para curso especial</p>
+      <p class="simbology-text"><span class="p-i-c-d">&#35;</span>&#32;Periodo intersemestral para capacitacion del personal docente y administrativo</p>
+      <p class="simbology-text"><span class="c-c">&#35;</span>&#32;Captura de calificaciones</p>
+      <p class="simbology-text"><span class="s-a-s">&#35;</span>&#32;Suspensión aniversario SUTCOBAEM(personal sindicalizado)</p>
+      <p class="simbology-text"><span class="r-e">&#35;</span>&#32;Reunion estatal</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+		<p class="footer-text"><a href="https://c0raje.github.io/">C0raje.github.io</a></p>
+		<p class="footer-text">Pagina hecha solo por hobi.</p>
+		<p class="footer-text"><a href="https://wa.me/527351156556/">Contactame!</a></p>
+	</footer>
+</body>
+</html>
