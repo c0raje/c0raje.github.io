@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      line-height: 1;
+      box-sizing: border-box;
+    }
+    :root {
+      /* body */
+      --background-body: rgb(0 0 30);
+
+      /*  */
+      --accent: rgb(255 0 255);
+
+      /* header */
+      --color-page-name: rgb(255 255 255);
+      --font-size-page-name: 1.4rem;
+
+      /* main */
+      --color-repo-name: rgb(0 255 255);
+      --font-size-repo-name: 1.2rem;
+      --color-repo-description: rgb(255 255 255);
+      --font-size-repo-description: 1rem;
+      --color-button: rgb(0 255 0);
+      --font-size-button: .8rem;
+      --background-button: rgba(255, 0, 255, 0.1);
+      --background-button-hover: rgba(255, 0, 255, 0.2);
+
+      /* footer */
+      --color-footer-text: rgb(255 255 255);
+      --font-size-footer-text: .8rem;
+      --color-footer-text-a: rgb(0 255 0);
+    }
+    body {
+      background: var(--background-body);
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+    }
+    /* header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      box-shadow: 0px 4px 14px var(--accent);
+    }
+    .header .page-name {
+      color: var(--color-page-name);
+      font-size: var(--font-size-page-name);
+      font-weight: bold;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      padding: 60px 26px;
+    }
+    .main .section {
+      padding: 10px;
+      border: 1px solid var(--accent);
+    }
+    .main .section .repo-name{
+      color: var(--color-repo-name);
+      font-size: var(--font-size-repo-name);
+      font-weight: bold;
+    }
+    .main .section .repo-description {
+      margin-top: 20px;
+      color: var(--color-repo-description);
+      font-size: var(--font-size-repo-description);
+    }
+    .main .section .repo-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      margin-top: 10px;
+    }
+    .main .section .repo-button a {
+      padding: 6px;
+      color: var(--color-button);
+      font-size: var(--font-size-button);
+      background: var(--background-button);
+    }
+    .main .section .repo-button a:hover {
+      background: var(--background-button-hover);
+    }
+
+    /* footer */
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      padding: 6px;
+      box-shadow: 0px 0px 14px var(--accent);
+    }
+
+    .footer .footer-content {
+      flex-basis: 70%;
+    }
+
+    .footer .footer-contact {
+      flex-basis: 30%;
+    }
+
+    .footer .footer-text {
+      color: var(--color-footer-text);
+      font-size: var(--font-size-footer-text);
+    }
+
+    .footer .footer-text a {
+      color: var(--color-footer-text-a);
+    }
+    .footer .footer-content .social-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .footer .footer-content .social-links li a {
+      color: var(--color-footer-text-a);
+      font-size: var(--font-size-footer-text);
+    }
+  </style>
+  <title>./c0raje/repo/</title>
+</head>
+<body>
+  <header class="header">
+    <p class="page-name">https&#58;&#47;&#47;c0raje&#46;github&#46;io</p>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <p class="repo-name">Repositorio de pruebas</p>
+      <p class="repo-description">Este repositorio ha sido creado exclusivamente con fines de prueba y no contiene nada serio. Es más bien un repositorio para propósitos de juego.</p>
+      <div class="repo-button"><a href="https://c0raje.github.io/repo1/">Ver repositorio</a></div>
+    </section>
+    <section class="section">
+      <p class="repo-name">Nombre de repositorio</p>
+      <p class="repo-description">Descripcion del repositorio</p>
+      <div class="repo-button"><a href="https://c0raje.github.io/repo1">Ver repositorio</a></div>
+    </section>
+    <section class="section">
+      <p class="repo-name">Nombre de repositorio</p>
+      <p class="repo-description">Descripcion del repositorio</p>
+      <div class="repo-button"><a href="https://c0raje.github.io/repo1">Ver repositorio</a></div>
+    </section>
+    <section class="section">
+      <p class="repo-name">Nombre de repositorio</p>
+      <p class="repo-description">Descripcion del repositorio</p>
+      <div class="repo-button"><a href="https://c0raje.github.io/repo1">Ver repositorio</a></div>
+    </section>
+    <section class="section">
+      <p class="repo-name">Nombre de repositorio</p>
+      <p class="repo-description">Descripcion del repositorio</p>
+      <div class="repo-button"><a href="https://c0raje.github.io/repo1">Ver repositorio</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">Página creada por hobi</p>
+      <p class="footer-text">Sígueme en:</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/c0raje">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/tu-nombre">LinkedIn(/)</a></li>
+        <li><a href="https://twitter.com/tu-usuario">Twitter(/)</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <p class="footer-text">¿Tienes alguna pregunta?</p>
+      <p class="footer-text"><a href="https://wa.me/527351156556/">Contáctame</a></p>
+    </div>
+  </footer>
+</body>
+</html>
