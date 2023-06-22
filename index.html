@@ -67,6 +67,7 @@
     .main .section {
       padding: 10px;
       border: 1px solid var(--accent);
+      border-radius: 6px;
     }
     .main .section .repo-name{
       color: var(--color-repo-name);
@@ -85,12 +86,16 @@
       margin-top: 10px;
     }
     .main .section .repo-button a {
+      transition: background, box-shadow .2s;
       padding: 6px;
       color: var(--color-button);
       font-size: var(--font-size-button);
       background: var(--background-button);
+      font-weight: bold;
+      border-radius: 6px;
     }
     .main .section .repo-button a:hover {
+      box-shadow: 0px 0px 4px var(--accent);
       background: var(--background-button-hover);
     }
 
