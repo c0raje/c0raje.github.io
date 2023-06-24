@@ -81,9 +81,6 @@
       display: flex;
       flex-direction: column;
       gap: 10px 20px;
-      max-width: 600px;
-      min-width: 400px;
-      margin: auto;
       padding: 20px 10px;
       background: var(--background-section);
       box-shadow: 0px 0px 6px var(--accent);
@@ -122,13 +119,16 @@
       font-weight: bold;
       margin-left: 10px;
     }
-    .main .section .pre-code {
+    .main .section pre {
     }
     .main .section code {
+      padding: 10px;
       font-size: var(--font-size-code);
       display: block;
       color: var(--color-code);
       background: var(--background-code);
+      border-radius: 6px;
+      box-shadow: 0px 0px 2px var(--accent2);
     }
   </style>
   <title>JavaScript</title>
@@ -152,39 +152,31 @@
         Usar <b>//</b> le dirá a JavaScript que ignore el resto del texto en la línea actual. Este es un comentario en línea: </p><br><br>
 
         <pre>
-          <code>
-            // This is an in-line comment.
-          </code>
+          <code>// This is an in-line comment.</code>
         </pre>
         <br>
         <p class="description">Puedes hacer un comentario multilínea comenzando con <b>/*</b> y terminando con <b>*/</b>. Este es un comentario multilínea:</p> <br><br>
         <pre>
-          <code>
-            /* This is a
-            multi-line comment */
-          </code>
+          <code>/* This is a
+multi-line comment */</code>
         </pre><br>
         <p class="description"><b>**Nota: **</b> A medida que programas, deberías añadir comentarios regularmente para aclarar el funcionamiento de las partes de tu código. Un buen comentario puede ayudar a comunicar la intención de tu código, tanto para otros como para tu yo futuro.</p>
       <p class="problem">Intenta crear un comentario de cada tipo.</p>
-      <pre class="pre-code">
-        <code>
-          // Comentario de una sola linea
-        </code>
+      <pre>
+        <code>// Comentario de una sola linea</code>
       </pre>
-      <pre class="pre-code">
-        <code>
-          /*
-          Comentario
-          multilinea
-          */
-        </code>
+      <pre>
+        <code>/*
+Comentario
+multilinea
+*/</code>
       </pre>
     </section>
     <section class="section">
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -192,7 +184,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -200,7 +192,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -208,7 +200,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -216,7 +208,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -224,7 +216,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -232,7 +224,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -240,7 +232,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -248,7 +240,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -256,7 +248,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -264,7 +256,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -272,7 +264,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -280,7 +272,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -288,7 +280,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -296,7 +288,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -304,7 +296,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -312,7 +304,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -320,7 +312,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -328,7 +320,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -336,7 +328,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -344,7 +336,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -352,7 +344,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -360,7 +352,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -368,7 +360,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -376,7 +368,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -384,7 +376,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -392,7 +384,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -400,7 +392,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -408,7 +400,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -416,7 +408,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -424,7 +416,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -432,7 +424,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -440,7 +432,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -448,7 +440,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -456,7 +448,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -464,7 +456,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -472,7 +464,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -480,7 +472,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -488,7 +480,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -496,7 +488,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -504,7 +496,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -512,7 +504,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -520,7 +512,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -528,7 +520,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -536,7 +528,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -544,7 +536,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -552,7 +544,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -560,7 +552,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -568,7 +560,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -576,7 +568,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -584,7 +576,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -592,7 +584,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -600,7 +592,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -608,7 +600,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -616,7 +608,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -624,7 +616,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -632,7 +624,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -640,7 +632,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -648,7 +640,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -656,7 +648,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -664,7 +656,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -672,7 +664,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -680,7 +672,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -688,7 +680,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -696,7 +688,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -704,7 +696,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -712,7 +704,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -720,7 +712,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -728,7 +720,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -736,7 +728,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -744,7 +736,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -752,7 +744,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -760,7 +752,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -768,7 +760,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -776,7 +768,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -784,7 +776,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -792,7 +784,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -800,7 +792,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -808,7 +800,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -816,7 +808,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -824,7 +816,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -832,7 +824,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -840,7 +832,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -848,7 +840,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -856,7 +848,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -864,7 +856,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -872,7 +864,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -880,7 +872,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -888,7 +880,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -896,7 +888,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -904,7 +896,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -912,7 +904,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -920,7 +912,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -928,7 +920,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -936,7 +928,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -944,7 +936,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -952,7 +944,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -960,7 +952,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -968,7 +960,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -976,7 +968,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -984,7 +976,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -992,7 +984,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1000,7 +992,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1008,7 +1000,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1016,7 +1008,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1024,7 +1016,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1032,7 +1024,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1040,7 +1032,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1048,7 +1040,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1056,7 +1048,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1064,7 +1056,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
@@ -1072,7 +1064,7 @@
       <p class="section-name"></p>
       <p class="description"></p>
       <p class="problem"></p>
-      <pre class="pre-code">
+      <pre>
         <code></code>
       </pre>
     </section>
