@@ -196,35 +196,74 @@ multilinea
         Mira el ejemplo <b>ourName[</b> de arriba si te quedas atascado.
       </p>
       <pre>
-        <code></code>
+        <code>var miNombre;</code>
       </pre>
     </section>
     <section class="section">
-      <p class="section-name"></p>
-      <p class="description"></p>
-      <p class="problem"></p>
+      <p class="section-name">Almacenar valores con el operador de asignación</p>
+      <p class="description">En JavaScript, puedes almacenar un valor en una variable con el operador de asignación (=).</p><br><br>
+
       <pre>
-        <code></code>
+        <code>myVariable = 5;</code>
       </pre>
-    </section>
-    <section class="section">
-      <p class="section-name"></p>
-      <p class="description"></p>
-      <p class="problem"></p>
+      <p class="description">Esto asigna el valor numérico (<b>Number</b>) <b>5</b> a <b>myVariable</b>.
+        
+        Si hay algunos cálculos a la derecha del operador =, se realizan antes de que el valor se asigne a la variable a la izquierda del operador.</p><br><br>
+        
+        <pre>
+          <code>var myVar;
+myVar = 5;</code>
+        </pre>
+
+        <p class="description">Primero, este código crea una variable llamada <b>myVar</b>. Luego, el código asigna <b>5</b> a <b>myVar</b>. Ahora, si <b>myVar</b> aparece de nuevo en el código, el programa lo tratará como si fuera <b>5</b>.</p>
+      <p class="problem">Asigna el valor 7 a la variable a.</p>
       <pre>
-        <code></code>
+        <code>// Configuración
+var a;
+
+// Cambia solo el código debajo de esta línea
+a = 7;</code>
       </pre>
     </section>
     <section class="section">
-      <p class="section-name"></p>
-      <p class="description"></p>
-      <p class="problem"></p>
+      <p class="section-name">Asigna el valor de una variable a otra variable</p>
+      <p class="description">Después de asignar un valor a una variable usando el operador de asignación, puedes asignar el valor de esa variable a otra variable usando el mismo operador de asignación.</p><br><br>
+
+        <pre>
+          <code>var myVar;
+myVar = 5;
+var myNum;
+myNum = myVar;</code>
+        </pre>
+
+        <p class="description">Lo anterior declara una variable <b>myVar</b> sin valor, y luego le asigna el valor <b>5</b>. A continuación, una variable llamada <b>myNum</b> es declarada, tambien sin valor. Luego, el contenido de <b>myVar</b> (que es <b>5</b>) se asigna a la variable <b>myNum</b>. Ahora, <b>myNum</b> también tiene el valor de <b>5</b>.</p>
+      <p class="problem">Asigna el contenido de a a la variable b.</p>
       <pre>
-        <code></code>
+        <code>// Configuración
+var a;
+a = 7;
+var b;
+
+// Cambia solo el código debajo de esta línea
+b = a;</code>
       </pre>
     </section>
     <section class="section">
-      <p class="section-name"></p>
+      <p class="section-name">Inicializa variables con el operador de asignación</p>
+      <p class="description">Es común inicializar una variable a un valor inicial en la misma línea que es declarada.</p><br><br>
+
+        <pre>
+          <code>var myVar = 0;</code>
+        </pre>
+
+        <p class="description">Crea una nueva variable llamada <b>myVar</b> y le asigna un valor inicial de <b>0</b>.</p>
+      <p class="problem">Define una variable <b>a</b> con <b>var</b> e inicialízala con un valor de <b>9</b>.</p>
+      <pre>
+        <code>var a = 9;</code>
+      </pre>
+    </section>
+    <section class="section">
+      <p class="section-name">Declara variables de cadena</p>
       <p class="description"></p>
       <p class="problem"></p>
       <pre>
