@@ -46,9 +46,6 @@ a {
   display: block;
   background: #000;
 }
-.header__nav:hover {
-  display: block;
-}
 .header__nav {
   top: 100%;
   right: 0%;
